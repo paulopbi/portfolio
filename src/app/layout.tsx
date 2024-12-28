@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
-import NavBar from "./components/NavBar";
 import "./globals.css";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
 const robotoFont = Roboto({
   weight: ["400", "500", "700"],
@@ -23,9 +24,12 @@ export default function RootLayout({
       <head>
         <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon" />
       </head>
-      <body className={`${robotoFont.className}  antialiased`}>
+      <body
+        className={`${robotoFont.className} bg-[#000004] text-white antialiased`}
+      >
         <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );
