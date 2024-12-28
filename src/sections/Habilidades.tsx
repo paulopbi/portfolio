@@ -1,8 +1,8 @@
-import ReactIcon from "@/app/components/Icons/React_Icon";
-import JavascriptIcon from "@/app/components/Icons/JS_Icon";
-import FigmaIcon from "@/app/components/Icons/Figma_Icon";
-import TailwindIcon from "@/app/components/Icons/Tailwind_Icon";
-import TypeIcon from "@/app/components/Icons/Type_Icon";
+import ReactIcon from "@/components/Icons/React_Icon";
+import JavascriptIcon from "@/components/Icons/JS_Icon";
+import FigmaIcon from "@/components/Icons/Figma_Icon";
+import TailwindIcon from "@/components/Icons/Tailwind_Icon";
+import TypeIcon from "@/components/Icons/Type_Icon";
 
 export default function Habilidades() {
   return (
