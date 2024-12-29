@@ -7,14 +7,13 @@ export default function Sass_Icon() {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_128_246)">
+      <g clipPath="url(#clip0_128_246)">
         <path
           d="M36.75 0H11.25C5.0368 0 0 5.0368 0 11.25V36.75C0 42.9632 5.0368 48 11.25 48H36.75C42.9632 48 48 42.9632 48 36.75V11.25C48 5.0368 42.9632 0 36.75 0Z"
           fill="#CD6799"
         />
         <mask
           id="mask0_128_246"
-          style="mask-type:luminance"
           maskUnits="userSpaceOnUse"
           x="5"
           y="9"

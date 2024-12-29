@@ -1,7 +1,7 @@
 export default function ReactIcon() {
   return (
     <svg
-      width="49"
+      width="48"
       height="48"
       viewBox="0 0 49 48"
       fill="none"
