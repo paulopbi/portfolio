@@ -4,7 +4,10 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-black py-10 text-center text-sm text-[#bcbcbc]">
+    <footer
+      id="contato"
+      className="bg-black py-10 text-center text-sm text-[#bcbcbc]"
+    >
       <div className="flex flex-col items-center justify-center">
         <div className="mb-6 inline-flex items-center justify-center">
           <Image src={logoIcon} width={40} height={40} alt="ICONE" />
@@ -20,11 +23,11 @@ export default function Footer() {
             Rio de Janeiro - Brasil
           </address>
           <div className="flex items-center justify-center gap-4">
-            <a href="#">
-              <LucideGithub color="gray" size={24} />
+            <a href="#" className="link">
+              <LucideGithub size={24} />
             </a>
-            <a href="#">
-              <LucideLinkedin color="gray" size={24} />
+            <a href="#" className="link">
+              <LucideLinkedin size={24} />
             </a>
           </div>
         </div>
