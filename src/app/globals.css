@@ -2,14 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 32px;
-}
-
 @layer components {
+  .link {
+    @apply rounded-sm border-b-2 border-transparent pb-1 text-white transition-all ease-in-out hover:border-indigo-400 hover:text-indigo-400;
+  }
+
   .card-slug {
-    @apply inline-block rounded-full border border-indigo-50/50 px-2.5 py-1.5 text-[11px] font-normal leading-none text-indigo-50/50;
+    @apply inline-block rounded-full border border-white/60 px-2.5 py-1.5 text-[11px] font-normal leading-none tracking-wide text-white/60;
   }
 
   .btn-primary {
@@ -29,6 +28,28 @@ html {
   }
 
   .section-subtitle {
-    @apply mx-auto inline-block text-base text-indigo-50/90;
+    @apply mx-auto inline-block text-base text-white/80;
   }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 32px;
+  /* scrollbar-color: #616af1; */
+  /* scrollbar-track-color: #616af1; */
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 11px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #000004;
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #616af1;
+  border-radius: 4px;
 }
