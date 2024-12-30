@@ -121,7 +121,7 @@ export default function Hero() {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.8, rotate: 2 }}
                 href="../assets/pdf/frontend_paulo_victor.pdf"
-                download
+                download={true}
                 className="btn-primary flex items-center justify-between gap-2 px-8 py-2"
               >
                 Curriculo
