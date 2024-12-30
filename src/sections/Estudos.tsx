@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "motion/react";
 import Ornament_Icon from "@/components/Icons/Ornament_Icon";
 import SectionHeading from "@/components/SectionHeading";
 
@@ -66,19 +68,21 @@ export default function Estudos() {
       id="educacao"
       className="container relative mx-auto w-full px-4 py-10"
     >
-      <div className="absolute left-0 top-[70px]">
+      <div className="absolute left-4 top-20 opacity-40">
         <Ornament_Icon />
       </div>
-      <div className="absolute bottom-[70px] right-0">
+      <div className="absolute bottom-20 right-4 opacity-40">
         <Ornament_Icon />
       </div>
       <SectionHeading title="Educação">
         Meus certificações, diplomas e cursos de T.I ou programação
       </SectionHeading>
 
-      <article className="container mx-auto grid grid-cols-1 gap-4 py-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <section className="container mx-auto grid grid-cols-1 gap-4 py-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {formacoes.map((formacao) => (
-          <div
+          <motion.article
+            animate={{ opacity: 0, scale: 0.5, translateY: -100 }}
+            whileInView={{ opacity: 1, scale: 1, translateY: 0 }}
             key={formacao.id}
             className="flex flex-col justify-between rounded-md border border-indigo-400 bg-indigo-950 p-4 md:min-h-[230px] md:max-w-[400px]"
           >
@@ -92,9 +96,9 @@ export default function Estudos() {
               <span>{formacao.instituicao}</span>
               <span>{formacao.horas}H</span>
             </div>
-          </div>
+          </motion.article>
         ))}
-      </article>
+      </section>
     </section>
   );
 }
