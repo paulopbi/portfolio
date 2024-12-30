@@ -20,60 +20,60 @@ import OrnamentIcon from "@/components/Icons/Ornament_Icon";
 
 const stacks = [
   {
-    name: "React",
-    icon: ReactIcon,
+    nome: "React",
+    icone: ReactIcon,
   },
   {
-    name: "Typescript",
-    icon: TypeIcon,
+    nome: "Typescript",
+    icone: TypeIcon,
   },
   {
-    name: "Javascript",
-    icon: JavascriptIcon,
+    nome: "Javascript",
+    icone: JavascriptIcon,
   },
   {
-    name: "Figma",
-    icon: FigmaIcon,
+    nome: "Figma",
+    icone: FigmaIcon,
   },
   {
-    name: "Tailwind CSS",
-    icon: TailwindIcon,
+    nome: "Tailwind CSS",
+    icone: TailwindIcon,
   },
   {
-    name: "SASS",
-    icon: SassIcon,
+    nome: "SASS",
+    icone: SassIcon,
   },
   {
-    name: "GIT",
-    icon: GitIcon,
+    nome: "GIT",
+    icone: GitIcon,
   },
   {
-    name: "Styled Components",
-    icon: StyledComponentsIcon,
+    nome: "Styled Components",
+    icone: StyledComponentsIcon,
   },
   {
-    name: "Node JS",
-    icon: NodeIcon,
+    nome: "Node JS",
+    icone: NodeIcon,
   },
   {
-    name: "Next JS",
-    icon: NextIcon,
+    nome: "Next JS",
+    icone: NextIcon,
   },
   {
-    name: "Postgres SQL",
-    icon: PostgresIcon,
+    nome: "Postgres SQL",
+    icone: PostgresIcon,
   },
   {
-    name: "Prisma",
-    icon: PrismaIcon,
+    nome: "Prisma",
+    icone: PrismaIcon,
   },
   {
-    name: "HTML",
-    icon: HTMLIcon,
+    nome: "HTML",
+    icone: HTMLIcon,
   },
   {
-    name: "Mongo DB",
-    icon: MongoDBIcon,
+    nome: "Mongo DB",
+    icone: MongoDBIcon,
   },
 ];
 
@@ -99,11 +99,11 @@ function HabilidadesColumn(props: {
             <React.Fragment key={index}>
               {props.stacks.map((stack) => (
                 <div
-                  key={stack.name}
+                  key={stack.nome}
                   className="flex h-[150px] w-[200px] flex-col items-center justify-center gap-4 rounded-md border-2 border-indigo-500 bg-indigo-950 px-4 py-6"
                 >
-                  <h5 className="text-sm font-bold">{stack.name}</h5>
-                  <stack.icon />
+                  <h5 className="text-sm font-bold">{stack.nome}</h5>
+                  <stack.icone />
                 </div>
               ))}
             </React.Fragment>
@@ -140,12 +140,12 @@ export default function Habilidades() {
         <HabilidadesColumn
           stacks={secoundColumn}
           className="hidden md:block"
-          duration={19}
+          duration={20}
         />
         <HabilidadesColumn
           stacks={thirdColumn}
           className="hidden lg:block"
-          duration={17}
+          duration={18}
         />
       </div>
     </section>
