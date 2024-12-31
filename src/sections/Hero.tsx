@@ -1,5 +1,5 @@
 "use client";
-import { ArrowDownToLine, Code } from "lucide-react";
+import { Code } from "lucide-react";
 import { motion } from "motion/react";
 import Image from "next/image";
 import HeroImage from "@/assets/images/hero.jpg";
@@ -15,24 +15,23 @@ export default function Hero() {
           <motion.div
             initial={{
               opacity: 0,
-              scale: 0.5,
-              translateY: 0,
+              scale: 0.6,
+              translateY: -50,
             }}
             animate={{
               opacity: 1,
               scale: 1,
-              translateY: -20,
+              translateY: 0,
             }}
-            whileHover={{ scale: 0.9, borderColor: "#616af1" }}
             transition={{ ease: "circInOut" }}
             className="z-20 mx-auto flex h-[380px] w-[380px] items-center justify-center overflow-clip rounded-full border-2 border-white/80 lg:w-[400]"
           >
             <Image
               src={HeroImage}
               alt="Minha foto"
-              width={1000}
-              height={1000}
-              className="h-full w-full object-cover"
+              width={400}
+              height={400}
+              className="z-25 h-full w-full object-cover"
               priority
             />
           </motion.div>
@@ -42,13 +41,11 @@ export default function Hero() {
                 opacity: 0,
                 scale: 0.5,
                 translateY: -20,
-                backdropFilter: "blur(400px)",
               }}
               animate={{
                 opacity: 1,
                 scale: 1,
                 translateY: 0,
-                backdropFilter: "blur(0px)",
               }}
               transition={{ ease: "circInOut" }}
               className="title-gradient mb-4 text-5xl font-bold tracking-tighter text-transparent md:text-6xl md:leading-[60px]"
@@ -60,13 +57,11 @@ export default function Hero() {
                 opacity: 0,
                 scale: 0.5,
                 translateY: -20,
-                backdropFilter: "blur(400px)",
               }}
               animate={{
                 opacity: 1,
                 scale: 1,
                 translateY: 0,
-                backdropFilter: "blur(0px)",
               }}
               transition={{ duration: 0.5, ease: "circInOut", delay: 0.5 }}
               className="mb-4 inline-flex items-center gap-2 text-lg font-normal text-white/90 md:text-2xl"
@@ -78,7 +73,7 @@ export default function Hero() {
               initial={{
                 opacity: 0,
                 scale: 0.5,
-                translateY: -20,
+                translateY: -50,
               }}
               animate={{
                 opacity: 1,
@@ -119,13 +114,11 @@ export default function Hero() {
             >
               <motion.a
                 whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.8, rotate: 2 }}
-                href="../assets/pdf/frontend_paulo_victor.pdf"
-                download={true}
+                whileTap={{ scale: 0.8, rotate: 3 }}
+                href="#projetos"
                 className="btn-primary flex items-center justify-between gap-2 px-8 py-2"
               >
-                Curriculo
-                <ArrowDownToLine size={20} color="#eef2ff" />
+                Projetos
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.1 }}
