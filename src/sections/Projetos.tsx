@@ -90,14 +90,14 @@ export default function Projetos() {
         Demonstrações e repositórios dos meus projetos
       </SectionHeading>
 
-      <section className="flex snap-x items-stretch justify-stretch gap-6 overflow-x-auto px-4 py-6">
+      <section className="flex items-stretch justify-stretch gap-6 overflow-x-auto px-4 py-6">
         {lista_projetos.map((props) => (
           <motion.div
             animate={{ translateY: "-100px", opacity: 0, scale: 0.8 }}
             whileInView={{ translateY: 0, opacity: 1, scale: 1 }}
-            transition={{ delay: 0.2, ease: "backInOut" }}
+            transition={{ delay: 0.1, ease: "easeOut" }}
             key={props.titulo}
-            className="mx-auto flex min-h-[300px] flex-shrink-0 snap-x snap-center flex-col items-center"
+            className="mx-auto flex min-h-[300px] flex-shrink-0 flex-col items-center"
           >
             <div className="h-[240px] max-w-[380px] overflow-clip rounded-t">
               <img
