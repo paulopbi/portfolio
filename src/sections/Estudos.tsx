@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "motion/react";
+import { GraduationCap, Languages } from "lucide-react";
 import Ornament_Icon from "@/components/Icons/Ornament_Icon";
 import SectionHeading from "@/components/SectionHeading";
 
@@ -9,7 +10,7 @@ const formacoes = [
     nome: "Analise E Desenvolvimento de Sistemas",
     instituicao: "Unicesumar",
     grau: "Superior Completo",
-    icone: "college",
+    icone: "study",
     horas: 18,
   },
   {
@@ -17,8 +18,8 @@ const formacoes = [
     nome: "Inglês",
     instituicao: "Intermediário",
     grau: "Idioma",
-    icone: "college",
-    horas: 34,
+    icone: "language",
+    horas: null,
   },
   {
     id: 3,
@@ -68,10 +69,10 @@ export default function Estudos() {
       id="educacao"
       className="container relative mx-auto w-full px-4 py-10"
     >
-      <div className="absolute left-4 top-20 opacity-40">
+      <div className="absolute left-4 top-20 hidden opacity-40 md:block">
         <Ornament_Icon />
       </div>
-      <div className="absolute bottom-20 right-4 opacity-40">
+      <div className="absolute bottom-20 right-4 hidden opacity-40 md:block">
         <Ornament_Icon />
       </div>
       <SectionHeading title="Educação">
@@ -87,14 +88,22 @@ export default function Estudos() {
             className="flex flex-col justify-between rounded-md border border-indigo-400 bg-indigo-950 p-4 md:min-h-[230px] md:max-w-[400px]"
           >
             <div className="pb-8">
-              <h4 className="mb-2 text-base font-medium">{formacao.grau}</h4>
+              <h4 className="mb-2 inline-flex w-full items-center justify-between gap-4 text-base font-medium text-white/70">
+                {formacao.grau}
+                {(formacao.icone === "language" && (
+                  <Languages opacity={0.7} />
+                )) ||
+                  (formacao.icone === "study" && (
+                    <GraduationCap opacity={0.7} />
+                  ))}
+              </h4>
               <h3 className="max-w-[300px] text-2xl font-bold capitalize leading-8 tracking-normal">
                 {formacao.nome}
               </h3>
             </div>
-            <div className="flex items-center justify-between text-sm font-normal uppercase">
+            <div className="flex items-center justify-between text-sm font-normal uppercase text-white/70">
               <span>{formacao.instituicao}</span>
-              <span>{formacao.horas}H</span>
+              <span>{formacao.horas ? `${formacao.horas}H` : null}</span>
             </div>
           </motion.article>
         ))}
