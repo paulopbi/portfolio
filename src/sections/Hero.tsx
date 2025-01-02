@@ -24,13 +24,13 @@ export default function Hero() {
               translateY: 0,
             }}
             transition={{ ease: "circInOut" }}
-            className="z-20 mx-auto flex h-[380px] w-[380px] items-center justify-center overflow-clip rounded-full border-2 border-white/80 lg:w-[400]"
+            className="z-20 mx-auto flex h-[260px] w-[260px] items-center justify-center overflow-clip rounded-full border-2 border-white/80 md:h-[380px] md:w-[380px]"
           >
             <Image
               src={HeroImage}
               alt="Minha foto"
-              width={400}
-              height={400}
+              width={800}
+              height={800}
               className="z-25 h-full w-full object-cover"
               priority
             />
@@ -132,51 +132,6 @@ export default function Hero() {
           </article>
         </div>
       </div>
-      {/* circulos desfocados */}
-      <motion.div
-        animate={{
-          scale: [1, 1.3],
-          opacity: [0.1, 0.35],
-          translateY: [-150, 150],
-        }}
-        transition={{
-          repeat: Infinity,
-          repeatType: "mirror",
-          duration: 5,
-          delay: 0,
-        }}
-        className="absolute -left-10 -top-5 z-0 h-[400px] w-[400px] rounded-full bg-[#1B103A] blur-[80px] backdrop-grayscale"
-      ></motion.div>
-      <motion.div
-        animate={{
-          scale: [1, 1.5],
-          opacity: [0.1, 0.35],
-          translateY: [-150, 150],
-        }}
-        transition={{
-          repeat: Infinity,
-          repeatType: "mirror",
-          duration: 5,
-          delay: 0,
-          ease: "linear",
-        }}
-        className="bottom-70 absolute -right-10 -top-12 z-0 h-[400px] w-[400px] rounded-full bg-[#1B103A] blur-[50px]"
-      ></motion.div>
-      <motion.div
-        animate={{
-          scale: [1, 1.3],
-          opacity: [0.1, 0.35],
-          translateY: [-150, 150],
-        }}
-        transition={{
-          repeat: Infinity,
-          repeatType: "mirror",
-          duration: 5,
-          delay: 0,
-          ease: "linear",
-        }}
-        className="bottom-15 absolute -left-10 z-0 h-[400px] w-[400px] rounded-full bg-[#1B103A] blur-[50px] backdrop-grayscale"
-      ></motion.div>
     </section>
   );
 }
