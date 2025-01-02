@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 import Dogs from "../assets/demo/dogs_demo.png";
 import Sass from "../assets/demo/saas_demo.gif";
 import RickAndMorty from "../assets/demo/rick_and_morty_demo.gif";
-import CodeLandia from "../assets/demo/capa_codelandia.svg";
+import CodeLandia from "../assets/demo/codelandia.jpg";
 import FlashDash from "../assets/demo/flashdash_demo.gif";
 import LemonPeper from "../assets/demo/lemon_peper.jpg";
 import SectionHeading from "@/components/SectionHeading";
@@ -93,18 +93,22 @@ export default function Projetos() {
       <section className="flex snap-x items-stretch justify-stretch gap-6 overflow-x-auto px-4 py-6">
         {lista_projetos.map((props) => (
           <motion.div
-            animate={{ translateY: "-100px", opacity: 0 }}
-            whileInView={{ translateY: 0, opacity: 1 }}
+            animate={{ translateY: "-100px", opacity: 0, scale: 0.8 }}
+            whileInView={{ translateY: 0, opacity: 1, scale: 1 }}
+            transition={{ delay: 0.2, ease: "backInOut" }}
             key={props.titulo}
-            className="mx-auto flex min-h-[300px] flex-shrink-0 snap-center flex-col items-center"
+            className="mx-auto flex min-h-[300px] flex-shrink-0 snap-x snap-center flex-col items-center"
           >
             <div className="h-[240px] max-w-[380px] overflow-clip rounded-t">
               <img
                 src={props.imagem_url}
                 alt={props.titulo}
+                width={1000}
+                height={1000}
                 className="object-fill object-center"
               />
             </div>
+
             <div className="flex max-w-[380px] flex-col rounded-b-md bg-indigo-950/60 px-2 py-4">
               <h4 className="mb-2 text-3xl font-bold">{props.titulo}</h4>
               <div className="flex flex-wrap gap-1.5">
