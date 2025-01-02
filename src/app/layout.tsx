@@ -10,7 +10,7 @@ const robotoFont = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Paulo Victor",
+  title: "Paulo Victor Silva Rosa",
   description:
     "Portfólio do programador Paulo Victor, onde tem todas as informações e projetos de programação.",
 };
@@ -22,9 +22,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <head>
-        <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon" />
-      </head>
       <body
         className={`${robotoFont.className} bg-[#000004] text-white antialiased`}
       >
