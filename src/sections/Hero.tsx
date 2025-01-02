@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <section
       id="sobre"
-      className="relative flex min-h-screen flex-col items-center justify-center gap-8 overflow-clip bg-gradient-to-b from-[#081333] to-[#000004] px-4 py-24"
+      className="relative flex flex-col items-center justify-center gap-8 overflow-clip bg-gradient-to-b from-[#081333] to-[#000004] px-4 py-24"
     >
       <div className="container">
         <div className="mx-auto flex flex-col items-center justify-center gap-4 md:max-w-[1000px] lg:flex-row lg:justify-between lg:gap-12">
@@ -136,7 +136,7 @@ export default function Hero() {
       <motion.div
         animate={{
           scale: [1, 1.3],
-          opacity: [0.1, 0.5],
+          opacity: [0.1, 0.35],
           translateY: [-150, 150],
         }}
         transition={{
@@ -145,12 +145,12 @@ export default function Hero() {
           duration: 5,
           delay: 0,
         }}
-        className="absolute -left-10 -top-5 z-0 h-[400px] w-[400px] rounded-full bg-[#1B103A] opacity-40 blur-[80px] backdrop-grayscale"
+        className="absolute -left-10 -top-5 z-0 h-[400px] w-[400px] rounded-full bg-[#1B103A] blur-[80px] backdrop-grayscale"
       ></motion.div>
       <motion.div
         animate={{
           scale: [1, 1.5],
-          opacity: [0.1, 0.5],
+          opacity: [0.1, 0.35],
           translateY: [-150, 150],
         }}
         transition={{
@@ -160,12 +160,12 @@ export default function Hero() {
           delay: 0,
           ease: "linear",
         }}
-        className="bottom-70 absolute -right-10 -top-12 z-0 h-[400px] w-[400px] rounded-full bg-[#1B103A] opacity-40 blur-[50px]"
+        className="bottom-70 absolute -right-10 -top-12 z-0 h-[400px] w-[400px] rounded-full bg-[#1B103A] blur-[50px]"
       ></motion.div>
       <motion.div
         animate={{
           scale: [1, 1.3],
-          opacity: [0.1, 0.5],
+          opacity: [0.1, 0.35],
           translateY: [-150, 150],
         }}
         transition={{
@@ -175,7 +175,7 @@ export default function Hero() {
           delay: 0,
           ease: "linear",
         }}
-        className="bottom-15 absolute -left-10 z-0 h-[400px] w-[400px] rounded-full bg-[#1B103A] opacity-40 blur-[50px] backdrop-grayscale"
+        className="bottom-15 absolute -left-10 z-0 h-[400px] w-[400px] rounded-full bg-[#1B103A] blur-[50px] backdrop-grayscale"
       ></motion.div>
     </section>
   );
