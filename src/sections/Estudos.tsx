@@ -1,65 +1,65 @@
 "use client";
 import { motion } from "motion/react";
-import { GraduationCap, Languages } from "lucide-react";
+import { BookOpenText, GraduationCap, Languages } from "lucide-react";
 import Ornament_Icon from "@/components/Icons/Ornament_Icon";
 import SectionHeading from "@/components/SectionHeading";
 
 const formacoes = [
   {
-    id: 1,
     nome: "Analise E Desenvolvimento de Sistemas",
     instituicao: "Unicesumar",
     grau: "Superior Completo",
-    icone: "study",
-    horas: 18,
+    icone: "faculdade",
+    horas: 2280,
   },
   {
-    id: 2,
     nome: "Inglês",
     instituicao: "Intermediário",
     grau: "Idioma",
-    icone: "language",
+    icone: "idioma",
     horas: null,
   },
   {
-    id: 3,
     nome: "UI Design Avançado",
     instituicao: "Origamid",
     grau: "Curso",
-    icone: "study",
-    horas: 22,
+    icone: "curso",
+    horas: 15,
   },
   {
-    id: 4,
     nome: "Next JS",
     instituicao: "Origamid",
     grau: "Curso",
-    icone: "study",
-    horas: 22,
+    icone: "curso",
+    horas: 18,
   },
   {
-    id: 5,
     nome: "React",
     instituicao: "Origamid",
     grau: "Curso",
-    icone: "study",
-    horas: 22,
+    icone: "curso",
+    horas: 18,
   },
   {
-    id: 6,
     nome: "Typescript",
     instituicao: "Origamid",
     grau: "Curso",
-    icone: "study",
-    horas: 22,
+    icone: "curso",
+    horas: 16,
   },
   {
-    id: 7,
     nome: "Javascript ES6+",
     instituicao: "Origamid",
     grau: "Curso",
-    icone: "study",
-    horas: 22,
+    icone: "curso",
+    horas: 37,
+  },
+  {
+    nome: "HTML, CSS e Sass",
+    instituicao: "Origamid",
+    grau: "Curso",
+    icone: "curso",
+    horas: 58,
   },
 ];
 
@@ -84,17 +84,18 @@ export default function Estudos() {
           <motion.article
             animate={{ opacity: 0, scale: 0.5, translateY: -100 }}
             whileInView={{ opacity: 1, scale: 1, translateY: 0 }}
-            key={formacao.id}
+            key={formacao.nome}
             className="flex flex-col justify-between rounded-md border border-indigo-400 bg-indigo-950 p-4 md:min-h-[230px] md:max-w-[400px]"
           >
             <div className="pb-8">
               <h4 className="mb-2 inline-flex w-full items-center justify-between gap-4 text-base font-medium text-white/70">
                 {formacao.grau}
-                {(formacao.icone === "language" && (
-                  <Languages opacity={0.7} />
-                )) ||
-                  (formacao.icone === "study" && (
+                {(formacao.icone === "idioma" && <Languages opacity={0.7} />) ||
+                  (formacao.icone === "faculdade" && (
                     <GraduationCap opacity={0.7} />
+                  )) ||
+                  (formacao.icone === "curso" && (
+                    <BookOpenText opacity={0.7} />
                   ))}
               </h4>
               <h3 className="max-w-[300px] text-2xl font-bold capitalize leading-8 tracking-normal">
