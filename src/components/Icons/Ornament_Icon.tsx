@@ -7,12 +7,12 @@ export default function Ornament_Icon() {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <circle cx="5" cy="5" r="5" fill="#0D0E1B" />
-      <circle cx="5" cy="19" r="5" fill="#0D0E1B" />
-      <circle cx="23" cy="5" r="5" fill="#0D0E1B" />
-      <circle cx="23" cy="19" r="5" fill="#0D0E1B" />
-      <circle cx="41" cy="5" r="5" fill="#0D0E1B" />
-      <circle cx="41" cy="19" r="5" fill="#0D0E1B" />
+      <circle cx="5" cy="5" r="5" fill="#2a2c46" />
+      <circle cx="5" cy="19" r="5" fill="#2a2c46" />
+      <circle cx="23" cy="5" r="5" fill="#2a2c46" />
+      <circle cx="23" cy="19" r="5" fill="#2a2c46" />
+      <circle cx="41" cy="5" r="5" fill="#2a2c46" />
+      <circle cx="41" cy="19" r="5" fill="#2a2c46" />
     </svg>
   );
 }
