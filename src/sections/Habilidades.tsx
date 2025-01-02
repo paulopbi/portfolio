@@ -124,10 +124,10 @@ export default function Habilidades() {
       id="tecnologias"
       className="container relative mx-auto px-4 py-10 md:py-24"
     >
-      <div className="absolute bottom-24 left-4 opacity-40">
+      <div className="absolute bottom-24 left-4 hidden opacity-40 md:block">
         <OrnamentIcon />
       </div>
-      <div className="absolute right-4 top-36 opacity-40">
+      <div className="absolute right-4 top-36 hidden opacity-40 md:block">
         <OrnamentIcon />
       </div>
       <SectionHeading title="Stacks e Habilidades">
