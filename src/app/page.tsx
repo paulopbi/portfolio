@@ -5,11 +5,11 @@ import Projetos from "@/sections/Projetos";
 
 export default function Home() {
   return (
-    <>
+    <main>
       <Hero />
       <Habilidades />
       <Projetos />
       <Estudos />
-    </>
+    </main>
   );
 }
