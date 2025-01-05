@@ -82,12 +82,13 @@ const highlightTags = (tags: string) => {
 
 export default function Projetos() {
   return (
-    <main
+    <section
       id="projetos"
       className="bg-gradient-to-b from-[#081333] to-[#000004] px-4 py-10 md:py-24"
     >
       <SectionHeading title="Projetos">
-        Demonstrações e repositórios dos meus projetos
+        Demonstração dos meus trabalhos, cada projeto reflete meu aprendizado e
+        meu compromisso em criar experiências únicas
       </SectionHeading>
 
       <section className="flex items-stretch justify-stretch gap-6 overflow-x-auto px-4 py-6">
@@ -172,6 +173,6 @@ export default function Projetos() {
           <ArrowRight size={19} />
         </motion.span>
       </span>
-    </main>
+    </section>
   );
 }
