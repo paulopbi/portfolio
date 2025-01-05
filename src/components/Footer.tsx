@@ -15,7 +15,7 @@ export default function Footer() {
         <div className="mb-6 flex flex-col gap-3">
           <a
             href="mailto:paulovictordev16@gmail.com"
-            className="text-md text-white hover:text-indigo-400"
+            className="text-md text-white transition-colors hover:text-indigo-400"
           >
             paulovictordev16@gmail.com
           </a>
@@ -31,7 +31,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <p className="text-sm">
+        <p className="break-words text-sm">
           © {new Date().getFullYear()} - Desenvolvido por Paulo Victor, todos
           os direitos reservados.
         </p>
