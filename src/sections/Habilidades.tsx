@@ -131,8 +131,8 @@ export default function Habilidades() {
         <OrnamentIcon />
       </div>
       <SectionHeading title="Stacks e Habilidades">
-        As principais línguagens, Frameworks e bibliotecas que utilizo no dia a
-        dia
+        As principais ferramentas e tecnologias que utilizo no meu dia a dia
+        como desenvolvedor frontend
       </SectionHeading>
 
       <div className="mt-10 flex max-h-[738px] justify-center gap-6 overflow-hidden [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)]">
