@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import { ArrowRight, GithubIcon } from "lucide-react";
+import { GithubIcon } from "lucide-react";
 import { motion } from "motion/react";
 import Dogs from "../assets/demo/dogs_demo.png";
 import Sass from "../assets/demo/saas_demo.gif";
@@ -91,22 +91,20 @@ export default function Projetos() {
         meu compromisso em criar experiências únicas
       </SectionHeading>
 
-      <section className="flex items-stretch justify-stretch gap-6 overflow-x-auto px-4 py-6">
+      <section className="container mx-auto flex flex-wrap items-start justify-start gap-x-6 gap-y-8 py-8">
         {lista_projetos.map((props) => (
           <motion.div
             animate={{ translateY: "-100px", opacity: 0, scale: 0.8 }}
             whileInView={{ translateY: 0, opacity: 1, scale: 1 }}
             transition={{ delay: 0.1, ease: "easeOut" }}
             key={props.titulo}
-            className="mx-auto flex min-h-[300px] flex-shrink-0 flex-col items-center"
+            className="mx-auto flex min-h-[300px] max-w-[380px] flex-auto flex-col items-center justify-start"
           >
             <div className="h-[240px] max-w-[380px] overflow-clip rounded-t">
               <img
                 src={props.imagem_url}
                 alt={props.titulo}
-                width={1000}
-                height={1000}
-                className="object-fill object-center"
+                className="block object-fill object-center"
               />
             </div>
 
@@ -129,10 +127,10 @@ export default function Projetos() {
                   </motion.div>
                 ))}
               </div>
-              <p className="mb-4 mt-2 max-w-[50ch] text-base leading-5 text-white/80">
+              <p className="mb-4 mt-2 max-w-[50ch] text-base leading-6 text-white/80">
                 {props.descricao}
               </p>
-              <div className="flex items-center justify-between">
+              <div className="flex w-full flex-wrap items-center justify-center gap-4 md:justify-between">
                 {props.repositorio_link ? (
                   <motion.a
                     whileHover={{ scale: 0.9 }}
@@ -140,7 +138,7 @@ export default function Projetos() {
                     href={props.repositorio_link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn-primary inline-flex items-center gap-2 px-8 py-2"
+                    className="btn-primary inline-flex w-full items-center justify-center gap-2 px-8 py-2 md:w-auto"
                   >
                     <GithubIcon size={19} />
                     Repositório
@@ -154,7 +152,7 @@ export default function Projetos() {
                     href={props.demonstracao_link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn-secondary inline-flex items-center gap-2 px-8 py-2"
+                    className="btn-secondary w-full items-center justify-center gap-2 px-8 py-2 text-center md:w-auto"
                   >
                     Demonstração
                   </motion.a>
@@ -164,15 +162,6 @@ export default function Projetos() {
           </motion.div>
         ))}
       </section>
-      <span className="mt-8 flex items-center justify-start gap-1 pl-4 text-sm font-normal text-indigo-50/20">
-        Role para o lado
-        <motion.span
-          animate={{ translateX: [0, 10], scale: [1, 0.8] }}
-          transition={{ repeat: Infinity, repeatType: "mirror", duration: 2 }}
-        >
-          <ArrowRight size={19} />
-        </motion.span>
-      </span>
     </section>
   );
 }
