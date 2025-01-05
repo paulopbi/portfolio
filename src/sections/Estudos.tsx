@@ -1,6 +1,11 @@
 "use client";
 import { motion } from "motion/react";
-import { BookOpenText, GraduationCap, Languages } from "lucide-react";
+import {
+  ArrowRight,
+  BookOpenText,
+  GraduationCap,
+  Languages,
+} from "lucide-react";
 import Ornament_Icon from "@/components/Icons/Ornament_Icon";
 import SectionHeading from "@/components/SectionHeading";
 
@@ -94,13 +99,13 @@ export default function Estudos() {
         obtive ao longo dos meus estudos
       </SectionHeading>
 
-      <section className="container mx-auto grid grid-cols-1 gap-4 py-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <section className="container mx-auto flex flex-shrink-0 gap-4 overflow-x-auto py-8">
         {formacoes.map((formacao) => (
           <motion.article
             animate={{ opacity: 0, scale: 0.5, translateY: -100 }}
             whileInView={{ opacity: 1, scale: 1, translateY: 0 }}
             key={formacao.nome}
-            className="flex flex-col justify-between rounded-md border border-indigo-400 bg-indigo-950 p-4 md:min-h-[230px] md:max-w-[400px]"
+            className="flex min-h-[230px] min-w-[380px] flex-col justify-between rounded-md border border-indigo-400 bg-indigo-950 p-4"
           >
             <div className="pb-8">
               <h4 className="mb-2 inline-flex w-full items-center justify-between gap-4 text-base font-medium text-white/70">
@@ -124,6 +129,15 @@ export default function Estudos() {
           </motion.article>
         ))}
       </section>
+      <span className="mt-8 flex items-center justify-start gap-1 pl-4 text-sm font-normal text-indigo-50/20">
+        Role para o lado
+        <motion.span
+          animate={{ translateX: [0, 10], scale: [1, 0.8] }}
+          transition={{ repeat: Infinity, repeatType: "mirror", duration: 2 }}
+        >
+          <ArrowRight size={19} />
+        </motion.span>
+      </span>
     </section>
   );
 }
