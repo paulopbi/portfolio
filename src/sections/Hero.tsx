@@ -1,5 +1,5 @@
 "use client";
-import { Code } from "lucide-react";
+import { Code, Download } from "lucide-react";
 import { motion } from "motion/react";
 import Image from "next/image";
 import HeroImage from "@/assets/images/hero.jpg";
@@ -94,8 +94,9 @@ export default function Hero() {
               Minha stack atual inclui <strong>Next.js</strong>,{" "}
               <strong>React</strong>, <strong>Tailwind CSS</strong>,{" "}
               <strong>TypeScript</strong>, <strong>Node.js</strong> e{" "}
-              <strong>MongoDB</strong> além de utilizar o <strong>Figma</strong>{" "}
-              para criar designs funcionais e modernos.
+              <strong>Postgre SQL</strong>, <strong>MongoDB</strong> além de
+              utilizar o <strong>Figma</strong> para criar designs funcionais e
+              modernos.
             </motion.p>
 
             <motion.div
@@ -115,10 +116,12 @@ export default function Hero() {
               <motion.a
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.8, rotate: 3 }}
-                href="#projetos"
+                href="/paulo-frontend-c.pdf"
+                download
                 className="btn-primary flex items-center justify-between gap-2 px-8 py-2"
               >
-                Projetos
+                <Download size={20} color="#fff" />
+                Curriculo
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.1 }}
