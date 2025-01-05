@@ -61,6 +61,20 @@ const formacoes = [
     icone: "curso",
     horas: 58,
   },
+  {
+    nome: "Tailwind CSS",
+    instituicao: "Origamid",
+    grau: "Curso",
+    icone: "curso",
+    horas: 16,
+  },
+  {
+    nome: "Git / Github ",
+    instituicao: "B7Web",
+    grau: "Curso",
+    icone: "curso",
+    horas: 20,
+  },
 ];
 
 export default function Estudos() {
@@ -72,11 +86,12 @@ export default function Estudos() {
       <div className="absolute left-4 top-20 hidden opacity-40 md:block">
         <Ornament_Icon />
       </div>
-      <div className="absolute bottom-20 right-4 hidden opacity-40 md:block">
+      <div className="absolute bottom-5 right-4 hidden opacity-40 md:block">
         <Ornament_Icon />
       </div>
       <SectionHeading title="Educação">
-        Meus certificações, diplomas e cursos de T.I ou programação
+        Aqui você encontrará minha trajetória acadêmica e os certificados que
+        obtive ao longo dos meus estudos
       </SectionHeading>
 
       <section className="container mx-auto grid grid-cols-1 gap-4 py-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
