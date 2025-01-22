@@ -6,7 +6,7 @@ import Dogs from "../assets/demo/dogs_demo.png";
 import Sass from "../assets/demo/saas_demo.gif";
 import RickAndMorty from "../assets/demo/rick_and_morty_demo.gif";
 import CodeLandia from "../assets/demo/codelandia.jpg";
-import FlashDash from "../assets/demo/flashdash_demo.gif";
+import FlashDash from "../assets/demo/flashdash.gif";
 import LemonPeper from "../assets/demo/lemon_peper.jpg";
 import SectionHeading from "@/components/SectionHeading";
 
@@ -18,7 +18,7 @@ const lista_projetos = [
     repositorio_link: "https://github.com/paulopbi/dogs-next",
     demonstracao_link: "https://dogs-next-bice.vercel.app/",
     descricao:
-      "Uma rede social para cachorros, onde os usuários podem compartilhar as fotos dos seus pets com outras pessoas, possui autenticação e cadastro e totalmente optimizado com o uso de Next.js",
+      "Uma rede social para cachorros, onde os usuários podem compartilhar as fotos dos seus pets com outras pessoas, possui autenticação e cadastro e totalmente optimizado com o uso de Next.js.",
   },
   {
     titulo: "Saas Landing Page",
@@ -31,12 +31,12 @@ const lista_projetos = [
   },
   {
     titulo: "FlashDash",
-    tags: ["react js", "tailwind css", "javascript"],
+    tags: ["react js", "typescript", "tailwind css", "shadcn"],
     imagem_url: FlashDash.src,
     repositorio_link: "https://github.com/paulopbi/flashdash",
-    demonstracao_link: "https://paulopbi.github.io/flashdash/",
+    demonstracao_link: "https://flashdash-nine.vercel.app/",
     descricao:
-      "Uma aplicação que utiliza a API do Unsplash para gera fotos aleatórias a cada vez que você entrar, os usuários podem baixar as fotos e usar como wallpaper de celular ou computador.",
+      "Uma aplicação que utiliza a API do Unsplash que possui várias fotos, os usuários podem pesquisar e baixar as fotos para utilizar como wallpaper de celular ou computador.",
   },
   {
     titulo: "Codelandia",
