@@ -1,4 +1,4 @@
-import logoIcon from "@/app/favicon.png";
+import logoIcon from "../../public/favicon.png";
 import { LucideGithub, LucideLinkedin } from "lucide-react";
 import Image from "next/image";
 

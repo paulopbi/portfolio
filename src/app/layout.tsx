@@ -11,6 +11,7 @@ const robotoFont = Roboto({
 
 export const metadata: Metadata = {
   title: "Paulo Victor Silva Rosa",
+  icons: "/favicon.png",
   description:
     "Portfólio do programador Paulo Victor, onde tem todas as informações e projetos de programação.",
 };
