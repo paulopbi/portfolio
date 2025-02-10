@@ -117,7 +117,7 @@ export default function Hero() {
               <motion.a
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.8, rotate: 3 }}
-                href="/paulo-frontend-curriculo.pdf"
+                href="/paulo-curriculo-frontend.pdf"
                 download
                 className="btn-primary flex items-center justify-between gap-2 px-8 py-2"
               >
