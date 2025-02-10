@@ -6,6 +6,7 @@ import Dogs from "../assets/demo/dogs_demo.png";
 import Sass from "../assets/demo/saas_demo.gif";
 import RickAndMorty from "../assets/demo/rick_and_morty_demo.gif";
 import CodeLandia from "../assets/demo/codelandia.jpg";
+import MovieMate from "../assets/demo/movie_mate.jpeg";
 import FlashDash from "../assets/demo/flashdash.gif";
 import LemonPeper from "../assets/demo/lemon_peper.jpg";
 import SectionHeading from "@/components/SectionHeading";
@@ -21,6 +22,15 @@ const lista_projetos = [
       "Uma rede social para cachorros, onde os usuários podem compartilhar as fotos dos seus pets com outras pessoas, possui autenticação e cadastro e totalmente optimizado com o uso de Next.js.",
   },
   {
+    titulo: "Movie Mate",
+    tags: ["react js", "tailwind css", "Appwrite", "Debounce", "TMDB API"],
+    imagem_url: MovieMate.src,
+    repositorio_link: "https://github.com/paulopbi/movie-mate",
+    demonstracao_link: "https://movie-mate-rho.vercel.app/",
+    descricao:
+      "Permite pesquisar filmes utilizando a API do TMDB, Ao pesquisar é utilizado o debounce nas requisições, os títulos pesquisados são salvos no Appwrite, permitindo exibir os mais procurados.",
+  },
+  {
     titulo: "Saas Landing Page",
     tags: ["next js", "tailwind css", "motion", "typescript"],
     imagem_url: Sass.src,
@@ -31,7 +41,7 @@ const lista_projetos = [
   },
   {
     titulo: "FlashDash",
-    tags: ["react js", "typescript", "tailwind css", "shadcn"],
+    tags: ["react js", "typescript", "tailwind css", "shadcn", "unsplash api"],
     imagem_url: FlashDash.src,
     repositorio_link: "https://github.com/paulopbi/flashdash",
     demonstracao_link: "https://flashdash-nine.vercel.app/",
@@ -104,7 +114,7 @@ export default function Projetos() {
               <img
                 src={props.imagem_url}
                 alt={props.titulo}
-                className="block object-fill object-center"
+                className="block h-auto w-full object-cover object-center"
               />
             </div>
 
