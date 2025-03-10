@@ -1,11 +1,17 @@
+"use client"
 import Image from "next/image"
-import { IoMenu } from "react-icons/io5"
 import USAFlag from "../../public/icons/usa-flag.png"
+import { motion } from "framer-motion"
+import { IoMenu } from "react-icons/io5"
 
 const Navbar = () => {
   return (
-    <header className="sticky top-0 left-0 w-full rounded-b-2xl bg-transparent p-4">
-      <nav className="mx-auto flex max-w-[1200px] items-center justify-between">
+    <motion.header
+      className="sticky top-0 left-0 z-10 w-full bg-transparent p-4 backdrop-blur-xl"
+      initial={{ y: -40, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+    >
+      <nav className="container flex items-center justify-between">
         <div className="font-regular text-2xl text-white">Paulo Victor</div>
 
         <nav>
@@ -28,7 +34,7 @@ const Navbar = () => {
           <IoMenu size={24} />
         </div>
       </nav>
-    </header>
+    </motion.header>
   )
 }
 
