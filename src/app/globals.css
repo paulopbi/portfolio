@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #0b0b0d;
-  --color-foreground: #191920;
-  --color-brand: #6b43d1;
-  --color-muted: #a9a9db;
-  --color-muted-opacity: rgba(255, 255, 255, 0.8);
+  --color-background: #070807;
+  --color-foreground: #1e2019;
+  --color-brand: #b7df58;
+  --color-brand-dark: #101504;
+  --color-muted: rgba(255, 255, 255, 0.8);
 }
 
 body {
@@ -16,24 +16,6 @@ body {
   max-width: 1200px;
   margin-inline: auto;
   padding-inline: 1rem;
-}
-
-.btn {
-  font-size: 1rem;
-  font-weight: 500;
-  border-radius: 4px;
-  display: inline-block;
-  width: fit-content;
-  padding: 0.8rem 1rem;
-}
-
-.btn.primary {
-  background-color: var(--color-brand);
-}
-
-.btn.ghost {
-  background-color: transparent;
-  border: 1px solid var(--color-muted-opacity);
 }
 
 .noise-effect {
