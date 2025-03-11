@@ -12,10 +12,10 @@ const Navbar = () => {
       animate={{ y: 0, opacity: 1 }}
     >
       <nav className="container flex items-center justify-between">
-        <div className="font-regular text-2xl text-white">Paulo Victor</div>
+        <div className="font-regular text-brand text-2xl">Paulo Victor</div>
 
         <nav>
-          <ul className="flex items-center gap-4 font-normal text-white/80">
+          <ul className="text-muted flex items-center gap-4 font-light">
             <li>Sobre</li>
             <li>Projetos</li>
             <li>Educação</li>
