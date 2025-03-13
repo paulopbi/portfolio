@@ -1,4 +1,3 @@
-import React from "react"
 import { DiGithubBadge } from "react-icons/di"
 import { LiaLinkedinIn } from "react-icons/lia"
 import { MdAlternateEmail } from "react-icons/md"
@@ -7,8 +6,8 @@ const Footer = () => {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="container mt-16 flex flex-col items-center justify-between gap-4 py-2 md:flex-row">
-      <p className="text-muted-opacity text-sm font-normal">
+    <footer className="container mt-16 flex w-full flex-col items-center justify-between gap-4 py-6 md:flex-row">
+      <p className="text-sm font-normal">
         &copy; {currentYear} Paulo Victor Silva. Todos os direitos reservados.
       </p>
       <div className="inline-flex gap-2">
