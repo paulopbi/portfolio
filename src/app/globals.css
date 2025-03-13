@@ -17,7 +17,3 @@ body {
   margin-inline: auto;
   padding-inline: 1rem;
 }
-
-.noise-effect {
-  background: url("../../public/images/noise.png") cover;
-}
