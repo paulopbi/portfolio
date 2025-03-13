@@ -13,7 +13,6 @@ import NextIcon from "@/components/Icons/Next_Icon"
 import NodeIcon from "@/components/Icons/Node_Icon"
 import PostgresIcon from "@/components/Icons/Postgres_Icon"
 import PrismaIcon from "@/components/Icons/Prisma_Icon"
-
 import { motion } from "framer-motion"
 
 const stacks = [
@@ -77,7 +76,7 @@ const stacks = [
 
 const Skills = () => {
   return (
-    <section className="mt-16 w-full overflow-hidden border-t border-b border-white/30 py-8 whitespace-nowrap">
+    <section className="mt-16 w-full overflow-hidden border-t border-b border-white/10 py-8 whitespace-nowrap">
       <motion.div
         initial={{ translateX: 0 }}
         animate={{ translateX: "-100%" }}
