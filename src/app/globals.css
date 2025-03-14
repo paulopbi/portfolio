@@ -1,11 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #070807;
-  --color-foreground: #1e2019;
-  --color-brand: #b7df58;
-  --color-brand-dark: #101504;
-  --color-muted: rgba(255, 255, 255, 0.8);
+  --color-brand: oklch(84.86% 0.1672 123.9);
+  --color-brand-dark: oklch(18.49% 0.0341 122.36);
+  --color-muted: oklch(100% 0 0 / 80%);
 }
 
 body {
