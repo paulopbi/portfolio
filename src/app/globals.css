@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:is(.dark *));
+
 @theme {
   --color-brand: oklch(84.86% 0.1672 123.9);
   --color-brand-dark: oklch(18.49% 0.0341 122.36);
