@@ -1,45 +1,51 @@
 "use client"
-import Image from "next/image"
-import USAFlag from "@/assets/images/usa_flag.png"
-import { motion } from "framer-motion"
-import { IoMenu } from "react-icons/io5"
+import Link from "next/link"
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
 import { ScrollProgress } from "./magicui/scroll-progress"
 import { Menu } from "lucide-react"
 
 const Navbar = () => {
   return (
     <>
-      <motion.header
-        className="sticky top-0 left-0 z-99 w-full p-4 backdrop-blur-2xl"
-        initial={{ y: -40, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-      >
-        <div className="container flex items-center justify-between">
-          <div className="text-brand text-md font-medium">Logo</div>
+      <header className="sticky top-0 left-0 z-20 flex h-[70px] w-full items-center justify-center p-4 backdrop-blur-2xl">
+        <nav className="container inline-flex justify-between">
+          {/* left side logo */}
+          <h2 className="text-brand text-md font-medium">
+            <Link href="/">Paulo Victor</Link>
+          </h2>
 
-          <nav>
-            <ul className="text-muted flex items-center gap-4 font-light">
-              <li>Sobre</li>
-              <li>Projetos</li>
-              <li>Educação</li>
-            </ul>
-          </nav>
+          {/* right side menu */}
+          <div className="z-20">
+            <DropdownMenu>
+              <DropdownMenuTrigger className="cursor-pointer">
+                <Menu />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="cursor-pointer">
+                <DropdownMenuItem asChild>
+                  <Link href="/">Sobre</Link>
+                </DropdownMenuItem>
 
-          <div className="flex items-center gap-4">
-            <div>
-              <Image
-                src={USAFlag}
-                width={32}
-                height={32}
-                alt="English language"
-              />
-            </div>
-            <IoMenu size={24} />
+                <DropdownMenuItem asChild>
+                  <Link href="/projects">Projetos</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
+                  <Link href="/experiences">Experiencias (PH)</Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                  <Link href="/contact">Contato</Link>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
-        </div>
-      </motion.header>
-      <div className="z-10 rounded-lg p-4">
-        <ScrollProgress className="top-[65px]" />
+        </nav>
+      </header>
+      <div className="z-20 rounded-lg p-4">
+        <ScrollProgress />
       </div>
     </>
   )
