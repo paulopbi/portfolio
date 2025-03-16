@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image"
-import USAFlag from "../../public/icons/usa-flag.png"
+import USAFlag from "@/assets/images/usa_flag.png"
 import { motion } from "framer-motion"
 import { IoMenu } from "react-icons/io5"
 
