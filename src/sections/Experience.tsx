@@ -1,6 +1,6 @@
 "use client"
-import CardInfo from "@/components/CardInfo"
-import Subtitle from "@/components/ui/Subtitle"
+import CardInfo from "@/components/card-info"
+import { TextAnimate } from "@/components/magicui/text-animate"
 import { FaStore } from "react-icons/fa6"
 import { RiWirelessChargingFill } from "react-icons/ri"
 
@@ -30,8 +30,15 @@ export const jobExperiences = [
 
 const Experience = () => {
   return (
-    <section className="noise-effect container mt-16" id="experience">
-      <Subtitle>Experiencia Profissional</Subtitle>
+    <section className="relative container mt-16" id="experience">
+      <TextAnimate
+        className="text-muted text-center text-sm font-light"
+        by="character"
+        as={"h2"}
+        animation="blurIn"
+      >
+        Experiencia Profissional
+      </TextAnimate>
 
       {jobExperiences.map((job) => (
         <CardInfo
