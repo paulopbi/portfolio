@@ -1,11 +1,13 @@
-import CardInfo from "@/components/CardInfo"
-import Subtitle from "@/components/ui/Subtitle"
+import CardInfo from "@/components/card-info"
+import { TextAnimate } from "@/components/magicui/text-animate"
 import { LuUniversity } from "react-icons/lu"
 
 const Education = () => {
   return (
-    <section className="mt-16" id="education">
-      <Subtitle>Experiencia Acadêmica</Subtitle>
+    <section className="relative container mt-16" id="education">
+      <TextAnimate className="text-muted text-center text-sm font-light">
+        Estudos
+      </TextAnimate>
 
       <CardInfo
         icon={<LuUniversity />}
