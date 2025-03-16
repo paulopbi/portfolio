@@ -1,6 +1,6 @@
 import CardInfo from "@/components/card-info"
 import { TextAnimate } from "@/components/magicui/text-animate"
-import { LuUniversity } from "react-icons/lu"
+import { GraduationCap } from "lucide-react"
 
 const Education = () => {
   return (
@@ -10,14 +10,14 @@ const Education = () => {
       </TextAnimate>
 
       <CardInfo
-        icon={<LuUniversity />}
+        icon={<GraduationCap />}
         jobTitle="análise e desenvolvimento de sistemas"
         companyName="unicesumar"
         whenStart="2022"
         whenFinish="2024"
       />
       <CardInfo
-        icon={<LuUniversity />}
+        icon={<GraduationCap />}
         jobTitle="técnico em eletrotécnica"
         companyName="escola técnica sandra silva"
         whenStart="2019"

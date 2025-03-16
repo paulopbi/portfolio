@@ -4,6 +4,7 @@ import USAFlag from "@/assets/images/usa_flag.png"
 import { motion } from "framer-motion"
 import { IoMenu } from "react-icons/io5"
 import { ScrollProgress } from "./magicui/scroll-progress"
+import { Menu } from "lucide-react"
 
 const Navbar = () => {
   return (

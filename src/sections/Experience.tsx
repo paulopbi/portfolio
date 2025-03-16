@@ -1,26 +1,25 @@
 "use client"
 import CardInfo from "@/components/card-info"
 import { TextAnimate } from "@/components/magicui/text-animate"
-import { FaStore } from "react-icons/fa6"
-import { RiWirelessChargingFill } from "react-icons/ri"
+import { Server, Store } from "lucide-react"
 
 export const jobExperiences = [
   {
-    icon: <RiWirelessChargingFill />,
+    icon: <Server />,
     title: "suporte técnico de redes",
     company: "brisa telecom",
     start: "fev/2024",
     end: "dez/2025",
   },
   {
-    icon: <FaStore />,
+    icon: <Store />,
     title: "operador de logistica I",
     company: "americanas s.a",
     start: "fev/2024",
     end: "dez/2025",
   },
   {
-    icon: <FaStore />,
+    icon: <Store />,
     title: "auxiliar de produção",
     company: "botafogo cultura & lazer",
     start: "fev/2024",
