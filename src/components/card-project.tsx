@@ -1,9 +1,11 @@
+"use client"
 import Image from "next/image"
+import Link from "next/link"
 import { ICardProject } from "@/types"
-import { Badge } from "./ui/badge"
+import { motion } from "framer-motion"
 import { Button } from "./ui/button"
 import { ArrowUpRight } from "lucide-react"
-import Link from "next/link"
+import { highlightTags } from "@/lib/utils"
 
 const CardProject = ({ imageSrc, title, skills, hrefTo }: ICardProject) => {
   return (
@@ -24,15 +26,21 @@ const CardProject = ({ imageSrc, title, skills, hrefTo }: ICardProject) => {
         <h3 className="line-clamp-1 text-left text-2xl font-bold capitalize">
           {title}
         </h3>
-        <div className="inline-flex flex-wrap items-center justify-start gap-2">
+        <div className="inline-flex flex-wrap items-center justify-start gap-x-2 gap-y-3">
           {skills.map((slug) => (
-            <Badge
-              variant="outline"
-              className="text-muted line-clamp-1 inline-flex flex-wrap items-center rounded-3xl bg-transparent px-2 py-1 text-center text-xs font-light uppercase"
+            <motion.div
+              animate={{ backgroundPositionX: "-100%" }}
+              transition={{
+                repeat: Infinity,
+                ease: "linear",
+                repeatType: "loop",
+                duration: 2,
+              }}
               key={slug}
+              className={`${highlightTags(slug)}`}
             >
-              {slug}
-            </Badge>
+              <span className="card-slug uppercase">{slug}</span>
+            </motion.div>
           ))}
         </div>
         <Button
