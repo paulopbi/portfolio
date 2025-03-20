@@ -11,13 +11,32 @@
 }
 
 body {
-  font-family: "Geist", sans-serif;
+  font-family: "Geist", "Inter", sans-serif;
+}
+
+strong {
+  font-weight: 600;
+  color: #fff;
 }
 
 .container {
   max-width: 1000px;
   margin-inline: auto;
   padding-inline: 1rem;
+}
+
+@layer components {
+  .subtitle {
+    @apply text-brand text-center text-2xl font-bold tracking-tight italic md:text-3xl;
+  }
+
+  .subtitle__description {
+    @apply text-muted inline-block max-w-[500px] text-center text-sm font-light;
+  }
+
+  /* .card-slug {
+    @apply ;
+  } */
 }
 
 :root {
