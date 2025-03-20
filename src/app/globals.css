@@ -33,10 +33,6 @@ strong {
   .subtitle__description {
     @apply text-muted inline-block max-w-[500px] text-center text-sm font-light;
   }
-
-  /* .card-slug {
-    @apply ;
-  } */
 }
 
 :root {
