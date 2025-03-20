@@ -1,27 +1,20 @@
 "use client"
 import CardInfo from "@/components/card-info"
 import { TextAnimate } from "@/components/magicui/text-animate"
-import { Server, Store } from "lucide-react"
+import { Forklift, Router } from "lucide-react"
 
 export const jobExperiences = [
   {
-    icon: <Server />,
+    icon: <Router />,
     title: "suporte técnico de redes",
-    company: "brisa telecom",
+    company: "Brisa Telecom",
     start: "fev/2024",
     end: "dez/2025",
   },
   {
-    icon: <Store />,
+    icon: <Forklift />,
     title: "operador de logistica I",
-    company: "americanas s.a",
-    start: "fev/2024",
-    end: "dez/2025",
-  },
-  {
-    icon: <Store />,
-    title: "auxiliar de produção",
-    company: "botafogo cultura & lazer",
+    company: "Americanas S.A",
     start: "fev/2024",
     end: "dez/2025",
   },
@@ -29,26 +22,38 @@ export const jobExperiences = [
 
 const Experience = () => {
   return (
-    <section className="relative container mt-16" id="experience">
-      <TextAnimate
-        className="text-muted text-center text-sm font-light"
-        by="character"
-        as={"h2"}
-        animation="blurIn"
-      >
-        Experiencia Profissional
-      </TextAnimate>
+    <section
+      className="container mt-20 grid grid-cols-1 items-start gap-10 md:grid-cols-2"
+      id="experience"
+    >
+      <div className="md:order-2">
+        <TextAnimate
+          className="subtitle"
+          by="character"
+          as={"h3"}
+          animation="scaleDown"
+        >
+          Experiência Profissional
+        </TextAnimate>
+        <p className="subtitle__description">
+          Ao longo da minha carreira, tive a chance de trabalhar em diferentes
+          cenários, alguns deles são
+        </p>
+      </div>
 
-      {jobExperiences.map((job) => (
-        <CardInfo
-          key={job.title}
-          icon={job.icon}
-          jobTitle={job.title}
-          companyName={job.company}
-          whenStart={job.start}
-          whenFinish={job.end}
-        />
-      ))}
+      <div className="md:order-1">
+        {/* card with job info */}
+        {jobExperiences.map((job) => (
+          <CardInfo
+            key={job.title}
+            icon={job.icon}
+            jobTitle={job.title}
+            companyName={job.company}
+            whenStart={job.start}
+            whenFinish={job.end}
+          />
+        ))}
+      </div>
     </section>
   )
 }
