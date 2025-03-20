@@ -1,17 +1,12 @@
 import { ICardInfo } from "@/types"
 import Image from "next/image"
+import { Button } from "./ui/button"
+import Link from "next/link"
+import { ArrowRight } from "lucide-react"
 
-const CardInfo = ({
-  image,
-  href,
-  icon,
-  jobTitle,
-  companyName,
-  whenStart,
-  whenFinish,
-}: ICardInfo) => {
+const CardInfo = ({ image, href, icon, jobTitle, companyName }: ICardInfo) => {
   return (
-    <article className="mx-auto mt-8 flex max-w-[900px] items-start gap-2.5 border-b border-white/10 pb-4">
+    <article className="mx-auto flex max-w-[900px] items-start gap-2.5 border-b border-white/10 pb-4 not-first:mt-8">
       {icon && (
         <div className="bg-foreground inline-flex h-[40px] w-[40px] items-center justify-center overflow-hidden rounded-full border p-2">
           {icon}
@@ -41,9 +36,15 @@ const CardInfo = ({
           <p className="text-muted text-sm font-light lowercase">
             {companyName}
           </p>
-          <p className="text-muted text-sm font-light lowercase">
-            {whenStart} - {whenFinish}
-          </p>
+          <Button
+            asChild
+            variant="link"
+            className="text-brand inline-flex w-fit cursor-pointer items-center justify-start gap-2 text-left capitalize"
+          >
+            <Link href="/teste">
+              Mais Detalhes <ArrowRight />
+            </Link>
+          </Button>
         </div>
       </div>
     </article>
