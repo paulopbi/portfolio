@@ -31,7 +31,7 @@ strong {
   }
 
   .subtitle__description {
-    @apply text-muted inline-block max-w-[500px] text-center text-sm font-light;
+    @apply text-muted mx-auto block max-w-[500px] text-center text-sm font-light md:text-base;
   }
 }
 
