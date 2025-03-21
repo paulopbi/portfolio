@@ -27,13 +27,13 @@ const Navbar = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuItem className="cursor-pointer" asChild>
-                  <Link href="/">Sobre</Link>
+                  <Link href="/">Ínicio</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="cursor-pointer" asChild>
                   <Link href="/projetos">Projetos</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="cursor-pointer" asChild>
-                  <Link href="/experiencias">Experiencias (PH)</Link>
+                  <Link href="/experiencias">Experiencias</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="cursor-pointer" asChild>
                   <Link href="/contato">Contato</Link>
