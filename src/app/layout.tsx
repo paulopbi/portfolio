@@ -30,7 +30,7 @@ export default function RootLayout({
         className={`${geistSansFont.className} bg-background relative text-white antialiased`}
       >
         <Particles
-          className="absolute inset-0 z-0"
+          className="absolute inset-0 z-0 min-h-full min-w-full"
           quantity={250}
           ease={100}
           refresh
