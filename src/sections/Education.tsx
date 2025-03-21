@@ -5,7 +5,7 @@ import { GraduationCap } from "lucide-react"
 const Education = () => {
   return (
     <section
-      className="container my-25 grid grid-cols-1 items-start gap-10 md:grid-cols-2"
+      className="container mt-20 grid grid-cols-1 items-start gap-10 md:mt-50 md:grid-cols-2"
       id="education"
     >
       <div>
