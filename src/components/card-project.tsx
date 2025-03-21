@@ -13,6 +13,7 @@ const CardProject = ({ imageSrc, title, skills, hrefTo }: ICardProject) => {
       {/* project image */}
       <div className="mx-auto aspect-square h-[320px] w-full overflow-hidden rounded-3xl">
         <Image
+          unoptimized
           src={imageSrc}
           width={800}
           height={800}
