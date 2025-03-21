@@ -116,8 +116,8 @@ function SkillColumn(props: {
 }
 
 const Skills = () => {
-  const firstColumn = stacks
-  const secoundColumn = stacks.reverse()
+  const firstColumn = [...stacks]
+  const secoundColumn = [...stacks].reverse()
 
   return (
     <section className="container mt-20 grid grid-cols-1 items-center md:grid-cols-2">
