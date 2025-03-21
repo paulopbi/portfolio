@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="z-10 order-2 col-span-2 max-w-[500px] lg:order-1 lg:max-w-full">
         <div>
           <span className="text-xs font-normal text-white/15 italic">
-            Bem-vindo ao meu universo de pixels e possibilidades! 🚀
+            Bem-vindo ao meu universo de pixels e possibilidades!
           </span>
           <h1 className="mt-1 text-4xl font-bold text-pretty break-words capitalize xl:text-4xl">
             Transformando ideias em interfaces incríveis com
