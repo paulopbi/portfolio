@@ -1,11 +1,11 @@
 import Link from "next/link"
 import CardProject from "@/components/card-project"
 import { Button } from "@/components/ui/button"
-import { projectsInfo } from "@/constants"
+import { projectsContentInfo } from "@/constants/project/index"
 
 const Projects = () => {
-  const showFourProjects = projectsInfo.filter((project) => project.main)
-  const totalProjectsNumber = projectsInfo.length
+  const showFourProjects = projectsContentInfo.filter((project) => project.main)
+  const totalProjectsNumber = projectsContentInfo.length
   return (
     <section className="container my-18">
       {/* projects */}
@@ -16,7 +16,7 @@ const Projects = () => {
             imageSrc={project.image_url}
             title={project.title}
             skills={project.tags}
-            hrefTo={`/project/${project.slug}`}
+            hrefTo={`/projetos/${project.slug}`}
           />
         ))}
       </div>
