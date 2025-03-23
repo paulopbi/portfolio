@@ -7,7 +7,7 @@
 @theme {
   --color-brand: oklch(84.86% 0.1672 123.9);
   --color-brand-dark: oklch(18.49% 0.0341 122.36);
-  --color-muted: oklch(100% 0 0 / 80%);
+  --color-muted: oklch(100% 0 0 / 60%);
 }
 
 body {
@@ -26,12 +26,20 @@ strong {
 }
 
 @layer components {
-  .subtitle {
-    @apply text-brand text-center text-2xl font-bold tracking-tight italic md:text-3xl;
+  .title {
+    @apply text-brand text-4xl font-bold tracking-wide capitalize italic md:text-5xl;
   }
 
-  .subtitle__description {
-    @apply text-muted mx-auto block max-w-[500px] text-center text-sm font-light md:text-base;
+  .subtitle {
+    @apply text-lg font-medium tracking-wide text-white md:text-2xl;
+  }
+
+  .subtitle--heading {
+    @apply text-brand text-2xl font-medium tracking-tight md:text-4xl;
+  }
+
+  .description {
+    @apply text-muted text-sm font-normal tracking-tight md:text-base;
   }
 }
 
