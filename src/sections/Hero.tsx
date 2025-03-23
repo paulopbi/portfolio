@@ -1,11 +1,12 @@
 "use client"
-import Image from "next/image"
 import React from "react"
-import HeroImage from "@/assets/images/hero.jpg"
-import RotatingText from "@/components/reactbits/rotating-text"
-import { rotatingTextValues } from "@/constants"
-import { Button } from "@/components/ui/button"
+import Image from "next/image"
 import Link from "next/link"
+import HeroImage from "@/assets/images/hero.jpg"
+import { rotatingTextWords } from "@/constants"
+import { Button } from "@/components/ui/button"
+import { BricolageGrotesqueFont } from "@/utils/fonts"
+import { WordRotate } from "@/components/magicui/word-rotate"
 
 const Hero = () => {
   return (
@@ -16,19 +17,13 @@ const Hero = () => {
           <span className="text-xs font-normal text-white/15 italic">
             Bem-vindo ao meu universo de pixels e possibilidades!
           </span>
-          <h1 className="mt-1 text-4xl font-bold text-pretty break-words capitalize xl:text-4xl">
+          <h1
+            className={`${BricolageGrotesqueFont.className} mt-1 text-4xl font-bold text-pretty break-words capitalize xl:text-4xl`}
+          >
             Transformando ideias em interfaces incríveis com
-            <RotatingText
-              texts={rotatingTextValues}
-              mainClassName="w-fit text-brand overflow-hidden justify-center rounded-md"
-              staggerFrom={"random"}
-              initial={{ y: "100%" }}
-              animate={{ y: 0 }}
-              exit={{ y: "-120%" }}
-              staggerDuration={0.028}
-              splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
-              transition={{ type: "spring", damping: 30, stiffness: 400 }}
-              rotationInterval={2000}
+            <WordRotate
+              className={`text-brand w-fit justify-center overflow-hidden rounded-md ${BricolageGrotesqueFont.className}`}
+              words={rotatingTextWords}
             />
           </h1>
         </div>
