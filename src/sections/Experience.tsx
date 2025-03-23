@@ -26,16 +26,16 @@ const Experience = () => {
       className="container mt-20 grid grid-cols-1 items-start gap-10 md:grid-cols-2"
       id="experience"
     >
-      <div className="md:order-2">
+      <div className="text-center md:order-2">
         <TextAnimate
-          className="subtitle"
+          className="subtitle--heading"
           by="character"
-          as={"h3"}
+          as={"h2"}
           animation="scaleDown"
         >
           Experiência Profissional
         </TextAnimate>
-        <p className="subtitle__description">
+        <p className="description mx-auto max-w-[50ch]">
           Ao longo da minha carreira, tive a chance de trabalhar em diferentes
           cenários, alguns deles são
         </p>

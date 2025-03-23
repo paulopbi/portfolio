@@ -49,16 +49,16 @@ const Skills = () => {
 
   return (
     <section className="container mt-20 grid grid-cols-1 items-center md:grid-cols-2">
-      <div>
+      <div className="text-center">
         <TextAnimate
-          className="subtitle"
+          className="subtitle--heading"
           by="character"
-          as={"h3"}
+          as={"h2"}
           animation="scaleDown"
         >
           Habilidades
         </TextAnimate>
-        <p className="subtitle__description">
+        <p className="description mx-auto max-w-[50ch]">
           Cada quadrado desse representa uma etapa da minha jornada de
           aprendizado e prática, juntas, essas tecnologias formam o conjunto de
           ferramentas que uso para criar experiências digitais impactantes.

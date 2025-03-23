@@ -8,16 +8,16 @@ const Education = () => {
       className="container mt-20 grid grid-cols-1 items-start gap-10 md:mt-50 md:grid-cols-2"
       id="education"
     >
-      <div>
+      <div className="text-center">
         <TextAnimate
-          className="subtitle"
+          className="subtitle--heading"
           by="character"
-          as={"h3"}
+          as={"h2"}
           animation="scaleDown"
         >
           Estudos e Especialização
         </TextAnimate>
-        <p className="subtitle__description">
+        <p className="description mx-auto max-w-[50ch]">
           Para mim, estudo e trabalho andam juntos. Cada nova aprendizagem é um
           passo rumo à excelência no que faço.
         </p>

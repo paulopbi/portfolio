@@ -24,18 +24,18 @@ const Services = () => {
   return (
     <section className="z-10 container mt-20">
       {/* heading */}
-      <div className="flex flex-col items-center justify-center gap-2">
+      <div className="text-center">
         <TextAnimate
-          className="subtitle"
+          className="subtitle--heading"
           by="character"
           as={"h3"}
           animation="scaleDown"
         >
           Serviços
         </TextAnimate>
-        <span className="subtitle__description">
-          Meus serviços abrangem três áreas essenciais no processo de criação
-        </span>
+        <p className="description mx-auto max-w-[50ch]">
+          Meus serviços abrangem três áreas essenciais no processo de criação.
+        </p>
       </div>
 
       {/* cards */}
