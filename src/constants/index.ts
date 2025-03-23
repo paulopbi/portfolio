@@ -1,4 +1,4 @@
-export const rotatingTextValues = [
+export const rotatingTextWords = [
   "React",
   "Next JS",
   "Typescript",
