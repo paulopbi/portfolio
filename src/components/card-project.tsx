@@ -27,7 +27,9 @@ const CardProject = ({ imageSrc, title, skills, hrefTo }: ICardProject) => {
         <h3 className="line-clamp-1 text-left text-2xl font-bold capitalize">
           {title}
         </h3>
+
         <div className="inline-flex flex-wrap items-center justify-start gap-x-2 gap-y-3">
+          {/* badges */}
           {skills.map((slug) => (
             <motion.div
               animate={{ backgroundPositionX: "-100%" }}
@@ -40,10 +42,12 @@ const CardProject = ({ imageSrc, title, skills, hrefTo }: ICardProject) => {
               key={slug}
               className={`${highlightTags(slug)}`}
             >
-              <span className="card-slug uppercase">{slug}</span>
+              <span>{slug}</span>
             </motion.div>
           ))}
         </div>
+
+        {/* links */}
         <Button
           asChild
           variant="link"
