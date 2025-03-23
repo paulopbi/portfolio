@@ -27,15 +27,19 @@ strong {
 
 @layer components {
   .title {
-    @apply text-brand text-4xl font-bold tracking-wide capitalize italic md:text-5xl;
+    @apply text-brand font-[Bricolage_Grotesque] text-4xl font-bold tracking-tight capitalize italic md:text-5xl;
+  }
+
+  .title--project {
+    @apply font-[Bricolage_Grotesque] text-3xl font-bold tracking-tight text-white capitalize md:text-4xl;
   }
 
   .subtitle {
-    @apply text-lg font-medium tracking-wide text-white md:text-2xl;
+    @apply font-[Bricolage_Grotesque] text-lg font-bold tracking-wide text-white md:text-2xl;
   }
 
   .subtitle--heading {
-    @apply text-brand text-2xl font-medium tracking-tight md:text-4xl;
+    @apply text-brand font-[Bricolage_Grotesque] text-2xl font-bold tracking-tight md:text-4xl;
   }
 
   .description {
