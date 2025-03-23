@@ -2,7 +2,7 @@
 import React from "react"
 import { motion } from "framer-motion"
 import { TextAnimate } from "@/components/magicui/text-animate"
-import { stacks } from "@/constants"
+import { stacks } from "@/constants/project/index"
 
 function SkillColumn(props: {
   stacks: typeof stacks
