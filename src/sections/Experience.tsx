@@ -5,10 +5,7 @@ import { experienceSectionData } from "@/constants/experienceConstants"
 
 const Experience = () => {
   return (
-    <section
-      className="container mt-20 grid grid-cols-1 items-center gap-10 md:grid-cols-2"
-      id="experience"
-    >
+    <section className="container mt-20 grid grid-cols-1 items-center gap-10 md:grid-cols-2">
       <div className="text-center md:order-2">
         <TextAnimate
           className="subtitle--heading"

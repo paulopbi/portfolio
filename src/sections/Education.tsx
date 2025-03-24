@@ -4,10 +4,7 @@ import { educationalSectionData } from "@/constants/educationConstants"
 
 const Education = () => {
   return (
-    <section
-      className="container mt-20 grid grid-cols-1 items-center gap-10 md:mt-50 md:grid-cols-2"
-      id="education"
-    >
+    <section className="container mt-20 grid grid-cols-1 items-center gap-10 md:mt-50 md:grid-cols-2">
       <div className="text-center">
         <TextAnimate
           className="subtitle--heading"
