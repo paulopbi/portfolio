@@ -2,7 +2,7 @@
 import React from "react"
 import Image from "next/image"
 import Link from "next/link"
-import HeroImage from "@/assets/images/hero.jpg"
+import HeroImage from "@/assets/images/public/my_picture.jpg"
 import { rotatingTextWords } from "@/constants"
 import { Button } from "@/components/ui/button"
 import { BricolageGrotesqueFont } from "@/utils/fonts"
