@@ -2,10 +2,10 @@
 import React from "react"
 import { motion } from "framer-motion"
 import { TextAnimate } from "@/components/magicui/text-animate"
-import { stacks } from "@/constants/project/index"
+import { skillStacks } from "@/constants/skillsConstants"
 
 function SkillColumn(props: {
-  stacks: typeof stacks
+  stacks: typeof skillStacks
   className?: string
   duration?: number
 }) {
@@ -44,8 +44,8 @@ function SkillColumn(props: {
 }
 
 const Skills = () => {
-  const firstColumn = [...stacks]
-  const secoundColumn = [...stacks].reverse()
+  const firstColumn = [...skillStacks]
+  const secoundColumn = [...skillStacks].reverse()
 
   return (
     <section className="container mt-20 grid grid-cols-1 items-center md:grid-cols-2">
