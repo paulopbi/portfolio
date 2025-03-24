@@ -1,4 +1,4 @@
-import CardInfo from "@/components/card-info"
+import InformativeAccordion from "@/components/informative-accordion"
 import { TextAnimate } from "@/components/magicui/text-animate"
 import { educationalSectionData } from "@/constants/educationConstants"
 
@@ -25,7 +25,7 @@ const Education = () => {
 
       <article className="mx-auto w-full">
         {educationalSectionData.map((education) => (
-          <CardInfo
+          <InformativeAccordion
             key={education.title}
             title={education.title}
             subtitle={education.subtitle}

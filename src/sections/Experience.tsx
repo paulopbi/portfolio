@@ -1,5 +1,5 @@
 "use client"
-import CardInfo from "@/components/card-info"
+import InformativeAccordion from "@/components/informative-accordion"
 import { TextAnimate } from "@/components/magicui/text-animate"
 import { experienceSectionData } from "@/constants/experienceConstants"
 
@@ -27,7 +27,7 @@ const Experience = () => {
       <article className="mx-auto w-full md:order-1">
         {/* card with job info */}
         {experienceSectionData.map((experience) => (
-          <CardInfo
+          <InformativeAccordion
             key={experience.title}
             title={experience.title}
             subtitle={experience.subtitle}

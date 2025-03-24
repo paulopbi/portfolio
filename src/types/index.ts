@@ -1,13 +1,12 @@
 import { StaticImageData } from "next/image"
 
-export interface ICardInfo {
-  image?: string
+export interface IInformativeAccordion {
+  title: string
+  subtitle: string
+  description: string
+  year: string
   href?: string
-  icon?: React.ReactNode
-  jobTitle: string
-  companyName: string
-  whenStart: string
-  whenFinish: string
+  linkName?: string
 }
 
 export interface ICardProject {
