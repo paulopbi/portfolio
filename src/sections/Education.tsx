@@ -1,11 +1,11 @@
 import CardInfo from "@/components/card-info"
 import { TextAnimate } from "@/components/magicui/text-animate"
-import { GraduationCap } from "lucide-react"
+import { educationalSectionData } from "@/constants/educationConstants"
 
 const Education = () => {
   return (
     <section
-      className="container mt-20 grid grid-cols-1 items-start gap-10 md:mt-50 md:grid-cols-2"
+      className="container mt-20 grid grid-cols-1 items-center gap-10 md:mt-50 md:grid-cols-2"
       id="education"
     >
       <div className="text-center">
@@ -23,23 +23,19 @@ const Education = () => {
         </p>
       </div>
 
-      {/* card info with educational things */}
-      <div>
-        <CardInfo
-          icon={<GraduationCap />}
-          jobTitle="análise e desenvolvimento de sistemas"
-          companyName="unicesumar"
-          whenStart="2022"
-          whenFinish="2024"
-        />
-        <CardInfo
-          icon={<GraduationCap />}
-          jobTitle="técnico em eletrotécnica"
-          companyName="escola técnica sandra silva"
-          whenStart="2019"
-          whenFinish="2024"
-        />
-      </div>
+      <article className="mx-auto w-full">
+        {educationalSectionData.map((education) => (
+          <CardInfo
+            key={education.title}
+            title={education.title}
+            subtitle={education.subtitle}
+            description={education.description}
+            year={education.year}
+            href={education.href}
+            linkName={education.linkName}
+          />
+        ))}
+      </article>
     </section>
   )
 }

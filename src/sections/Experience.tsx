@@ -1,29 +1,12 @@
 "use client"
 import CardInfo from "@/components/card-info"
 import { TextAnimate } from "@/components/magicui/text-animate"
-import { Forklift, Router } from "lucide-react"
-
-export const jobExperiences = [
-  {
-    icon: <Router />,
-    title: "suporte técnico de redes",
-    company: "Brisa Telecom",
-    start: "fev/2024",
-    end: "dez/2025",
-  },
-  {
-    icon: <Forklift />,
-    title: "operador de logistica I",
-    company: "Americanas S.A",
-    start: "fev/2024",
-    end: "dez/2025",
-  },
-]
+import { experienceSectionData } from "@/constants/experienceConstants"
 
 const Experience = () => {
   return (
     <section
-      className="container mt-20 grid grid-cols-1 items-start gap-10 md:grid-cols-2"
+      className="container mt-20 grid grid-cols-1 items-center gap-10 md:grid-cols-2"
       id="experience"
     >
       <div className="text-center md:order-2">
@@ -41,19 +24,18 @@ const Experience = () => {
         </p>
       </div>
 
-      <div className="md:order-1">
+      <article className="mx-auto w-full md:order-1">
         {/* card with job info */}
-        {jobExperiences.map((job) => (
+        {experienceSectionData.map((experience) => (
           <CardInfo
-            key={job.title}
-            icon={job.icon}
-            jobTitle={job.title}
-            companyName={job.company}
-            whenStart={job.start}
-            whenFinish={job.end}
+            key={experience.title}
+            title={experience.title}
+            subtitle={experience.subtitle}
+            description={experience.description}
+            year={experience.year}
           />
         ))}
-      </div>
+      </article>
     </section>
   )
 }
