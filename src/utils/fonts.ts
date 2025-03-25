@@ -1,7 +1,7 @@
-import { Bricolage_Grotesque, Geist } from "next/font/google"
+import { Bricolage_Grotesque, Inter } from "next/font/google"
 
-export const geistSansFont = Geist({
-  weight: ["100", "200", "300", "400", "500", "600", "700"],
+export const interSansFont = Inter({
+  weight: ["400", "500", "600"],
   subsets: ["latin"],
 })
 

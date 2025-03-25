@@ -43,7 +43,7 @@ strong {
   }
 
   .description {
-    @apply text-muted text-sm font-normal tracking-tight md:text-base;
+    @apply text-muted font-[Inter] text-sm font-normal tracking-tight md:text-base;
   }
 
   .badge-style {

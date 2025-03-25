@@ -2,8 +2,7 @@ import type { Metadata } from "next"
 import "./globals.css"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
-import { geistSansFont } from "@/utils/fonts"
-import { Particles } from "@/components/magicui/particles"
+import { interSansFont } from "@/utils/fonts"
 import { SeoKeyWords } from "@/constants"
 
 export const metadata: Metadata = {
@@ -27,15 +26,8 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`${geistSansFont.className} bg-background relative text-white antialiased`}
+        className={`${interSansFont.className} bg-background relative text-white antialiased`}
       >
-        <Particles
-          className="absolute inset-0 z-0 min-h-full min-w-full"
-          quantity={290}
-          ease={100}
-          color="#ccc"
-          refresh
-        />
         <Navbar />
         {children}
         <Footer />
