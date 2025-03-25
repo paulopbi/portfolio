@@ -5,10 +5,18 @@ import Projects from "@/sections/Projects"
 import Experience from "@/sections/Experience"
 import ProjectsText from "@/sections/ProjectsText"
 import Services from "@/sections/Services"
+import { Particles } from "@/components/magicui/particles"
 
 export default function Home() {
   return (
-    <main>
+    <main className="relative z-10">
+      <Particles
+        className="absolute inset-0 z-0 h-full w-full"
+        quantity={290}
+        ease={120}
+        color="#ccc"
+        refresh
+      />
       <Hero />
       <Services />
       <Skills />
