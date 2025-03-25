@@ -1,6 +1,6 @@
 import React from "react"
 import DetailedProjectInfo from "@/components/detailed-project"
-import { projectsContentInfo } from "@/constants/project/index"
+import { projectInfo } from "@/constants/projectConstants"
 
 const ProjectPage = async ({
   params,
@@ -8,7 +8,7 @@ const ProjectPage = async ({
   params: Promise<{ slug: string }>
 }) => {
   const { slug } = await params
-  const filteredProjectData = projectsContentInfo.filter(
+  const filteredProjectData = projectInfo.filter(
     (project) => project.slug === slug,
   )
 

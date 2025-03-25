@@ -6,17 +6,13 @@ import { motion } from "framer-motion"
 import { Button } from "./ui/button"
 import { ArrowLeft, ArrowUpRightIcon } from "lucide-react"
 import { Badge } from "./ui/badge"
-import { projectsContentInfo } from "@/constants/project"
+import { projectInfo } from "@/constants/projectConstants"
 import { TextAnimate } from "./magicui/text-animate"
 import { highlightTags } from "@/lib/utils"
 
-const DetailedProjectInfo = ({
-  data,
-}: {
-  data: typeof projectsContentInfo
-}) => {
+const DetailedProjectInfo = ({ data }: { data: typeof projectInfo }) => {
   return (
-    <section className="relative z-10 container min-h-dvh">
+    <section className="relative z-10 container">
       {/* header */}
       <div className="flex items-center justify-between gap-4">
         <Link

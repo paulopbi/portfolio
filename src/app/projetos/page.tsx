@@ -1,6 +1,6 @@
 import React from "react"
 import CardProject from "@/components/card-project"
-import { projectsContentInfo } from "@/constants/project/index"
+import { projectInfo } from "@/constants/projectConstants"
 import { TextAnimate } from "@/components/magicui/text-animate"
 
 const ProjectsPage = () => {
@@ -12,7 +12,7 @@ const ProjectsPage = () => {
 
       {/* card content */}
       <div className="mx-auto mt-16 grid min-h-dvh grid-cols-1 place-content-center gap-8 gap-x-20 gap-y-10 md:grid-cols-2">
-        {projectsContentInfo.map((project) => (
+        {projectInfo.map((project) => (
           <CardProject
             key={project.slug}
             title={project.title}
