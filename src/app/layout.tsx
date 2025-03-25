@@ -4,7 +4,7 @@ import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import { geistSansFont } from "@/utils/fonts"
 import { Particles } from "@/components/magicui/particles"
-import { projectKeyWords } from "@/constants"
+import { SeoKeyWords } from "@/constants"
 
 export const metadata: Metadata = {
   title: "Paulo Victor Silva Rosa - Desenvolvedor Frontend",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   icons: {
     icon: "./src/app/favicon.ico",
   },
-  keywords: projectKeyWords,
+  keywords: SeoKeyWords,
 }
 
 export default function RootLayout({
@@ -31,8 +31,9 @@ export default function RootLayout({
       >
         <Particles
           className="absolute inset-0 z-0 min-h-full min-w-full"
-          quantity={250}
+          quantity={290}
           ease={100}
+          color="#ccc"
           refresh
         />
         <Navbar />

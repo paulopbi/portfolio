@@ -8,7 +8,7 @@ export const rotatingTextWords = [
   "Figma",
 ]
 
-export const projectKeyWords = [
+export const SeoKeyWords = [
   "express",
   "node js",
   "react",
