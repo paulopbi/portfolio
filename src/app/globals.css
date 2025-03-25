@@ -45,6 +45,10 @@ strong {
   .description {
     @apply text-muted text-sm font-normal tracking-tight md:text-base;
   }
+
+  .badge-style {
+    @apply text-muted inline-block rounded-full border border-white/40 px-2.5 py-1.5 text-sm leading-none font-medium tracking-wide capitalize;
+  }
 }
 
 :root {
