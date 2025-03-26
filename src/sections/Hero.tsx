@@ -2,7 +2,7 @@
 import React from "react"
 import Image from "next/image"
 import Link from "next/link"
-import HeroImage from "@/assets/images/public/my_picture.jpg"
+import HeroImage from "@/assets/images/picture_hero.jpg"
 import { rotatingTextWords } from "@/constants"
 import { Button } from "@/components/ui/button"
 import { BricolageGrotesqueFont } from "@/utils/fonts"
@@ -19,9 +19,7 @@ const Hero = () => {
           <span className="text-xs font-normal text-white/20 italic">
             Bem-vindo ao meu universo de pixels e possibilidades!
           </span>
-          <h1
-            className={`${BricolageGrotesqueFont.className} title mt-1 text-white`}
-          >
+          <h1 className="title mt-1 text-white">
             Transformando ideias em interfaces incríveis com
             <WordRotate
               className={`title w-fit justify-center overflow-hidden rounded-md ${BricolageGrotesqueFont.className}`}
