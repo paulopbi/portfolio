@@ -11,11 +11,11 @@
 }
 
 body {
-  font-family: "Geist", "Inter", sans-serif;
+  font-family: "Inter", "Geist", sans-serif;
 }
 
 strong {
-  font-weight: 600;
+  font-weight: 700;
   color: #fff;
 }
 
@@ -26,20 +26,13 @@ strong {
 }
 
 @layer components {
+  /* standart */
   .title {
-    @apply text-brand font-[Bricolage_Grotesque] text-4xl font-bold tracking-tight capitalize italic md:text-5xl;
-  }
-
-  .title--project {
-    @apply font-[Bricolage_Grotesque] text-3xl font-bold tracking-tight text-white capitalize md:text-4xl;
+    @apply text-brand font-[Bricolage_Grotesque] text-4xl font-bold tracking-tight text-pretty break-words capitalize md:text-5xl;
   }
 
   .subtitle {
     @apply font-[Bricolage_Grotesque] text-lg font-bold tracking-wide text-white md:text-2xl;
-  }
-
-  .subtitle--heading {
-    @apply text-brand font-[Bricolage_Grotesque] text-2xl font-bold tracking-tight md:text-4xl;
   }
 
   .description {
@@ -48,6 +41,19 @@ strong {
 
   .badge-style {
     @apply text-muted inline-block rounded-full border border-white/20 px-2.5 py-1.5 text-sm leading-none font-medium tracking-wide capitalize;
+  }
+
+  /* variations */
+  .title--project {
+    @apply font-[Bricolage_Grotesque] text-3xl font-bold tracking-tight text-white capitalize md:text-4xl;
+  }
+
+  .title--services {
+    @apply my-4 font-[Bricolage_Grotesque] text-3xl font-bold tracking-tight text-white;
+  }
+
+  .subtitle--heading {
+    @apply text-brand/90 font-[Bricolage_Grotesque] text-2xl font-bold tracking-wide md:text-4xl;
   }
 }
 
