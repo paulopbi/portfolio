@@ -6,6 +6,7 @@ import Experience from "@/sections/Experience"
 import ProjectsText from "@/sections/ProjectsText"
 import Services from "@/sections/Services"
 import { Particles } from "@/components/magicui/particles"
+import Footer from "@/components/footer"
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <Education />
       <ProjectsText />
       <Projects />
+      <Footer />
     </main>
   )
 }
