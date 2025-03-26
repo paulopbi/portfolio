@@ -1,7 +1,6 @@
 import type { Metadata } from "next"
 import "./globals.css"
 import Navbar from "@/components/navbar"
-import Footer from "@/components/footer"
 import { interSansFont } from "@/utils/fonts"
 import { SeoKeyWords } from "@/constants"
 
@@ -30,7 +29,6 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
-        <Footer />
       </body>
     </html>
   )
