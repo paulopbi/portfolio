@@ -1,6 +1,7 @@
 import React from "react"
 import DetailedProjectInfo from "@/components/detailed-project"
 import { projectInfo } from "@/constants/projectConstants"
+import Footer from "@/components/footer"
 
 const ProjectPage = async ({
   params,
@@ -13,7 +14,12 @@ const ProjectPage = async ({
   )
 
   if (filteredProjectData)
-    return <DetailedProjectInfo data={filteredProjectData} />
+    return (
+      <>
+        <DetailedProjectInfo data={filteredProjectData} />
+        <Footer />
+      </>
+    )
 
   if (!filteredProjectData) return <p>Não encontrado</p>
 }
