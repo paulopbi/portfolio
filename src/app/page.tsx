@@ -7,27 +7,31 @@ import ProjectsText from "@/sections/ProjectsText"
 import Services from "@/sections/Services"
 import Footer from "../components/footer"
 import { Particles } from "@/components/magicui/particles"
+import NavBar from "@/components/nav-bar"
 
 export default function Home() {
   return (
-    <section className="relative z-10">
-      <Particles
-        className="absolute inset-0 z-0 h-full w-full"
-        quantity={290}
-        ease={120}
-        color="#ccc"
-        refresh
-      />
-      <main>
-        <Hero />
-        <Services />
-        <Skills />
-        <Experience />
-        <Education />
-        <ProjectsText />
-        <Projects />
-      </main>
+    <>
+      <NavBar />
+      <section className="relative z-10">
+        <Particles
+          className="absolute inset-0 z-0 h-full w-full"
+          quantity={290}
+          ease={120}
+          color="#ccc"
+          refresh
+        />
+        <main>
+          <Hero />
+          <Services />
+          <Skills />
+          <Experience />
+          <Education />
+          <ProjectsText />
+          <Projects />
+        </main>
+      </section>
       <Footer />
-    </section>
+    </>
   )
 }

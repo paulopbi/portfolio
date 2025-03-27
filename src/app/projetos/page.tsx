@@ -3,10 +3,12 @@ import CardProject from "@/components/card-project"
 import { projectInfo } from "@/constants/projectConstants"
 import { TextAnimate } from "@/components/magicui/text-animate"
 import Footer from "../../components/footer"
+import NavBar from "@/components/nav-bar"
 
 const ProjectsPage = () => {
   return (
     <>
+      <NavBar />
       <section className="relative container mt-10 mb-20">
         <TextAnimate className="subtitle--heading text-center">
           Todos os Projetos

@@ -1,5 +1,4 @@
 import "./globals.css"
-import Navbar from "../components/navbar"
 import type { Metadata } from "next"
 import { interSansFont } from "@/utils/fonts"
 import { SeoKeyWords } from "@/constants"
@@ -27,7 +26,6 @@ export default function RootLayout({
       <body
         className={`${interSansFont.className} bg-background relative text-white antialiased`}
       >
-        <Navbar />
         {children}
       </body>
     </html>
