@@ -5,12 +5,12 @@ import Projects from "@/sections/Projects"
 import Experience from "@/sections/Experience"
 import ProjectsText from "@/sections/ProjectsText"
 import Services from "@/sections/Services"
-import { Particles } from "@/components/magicui/particles"
 import Footer from "@/components/footer"
+import { Particles } from "@/components/magicui/particles"
 
 export default function Home() {
   return (
-    <main className="relative z-10">
+    <section className="relative z-10">
       <Particles
         className="absolute inset-0 z-0 h-full w-full"
         quantity={290}
@@ -18,14 +18,16 @@ export default function Home() {
         color="#ccc"
         refresh
       />
-      <Hero />
-      <Services />
-      <Skills />
-      <Experience />
-      <Education />
-      <ProjectsText />
-      <Projects />
+      <main>
+        <Hero />
+        <Services />
+        <Skills />
+        <Experience />
+        <Education />
+        <ProjectsText />
+        <Projects />
+      </main>
       <Footer />
-    </main>
+    </section>
   )
 }
