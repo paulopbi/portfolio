@@ -17,7 +17,7 @@ const Contact = () => {
       />
 
       {/* image */}
-      <div className="mx-auto mb-2 size-52 overflow-hidden rounded-full border-3 border-white/50 duration-75 ease-in hover:scale-[1.1]">
+      <div className="relative z-10 mx-auto mb-2 size-52 overflow-hidden rounded-full border-3 border-white/50 duration-75 ease-in hover:scale-[1.1]">
         <Image
           src={ContactPicture}
           alt="Foto do programador Paulo Victor no cristo redentor Rio de Janeiro"
