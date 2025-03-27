@@ -1,7 +1,7 @@
 import React from "react"
 import DetailedProjectInfo from "@/components/detailed-project"
-import { projectInfo } from "@/constants/projectConstants"
 import Footer from "@/components/footer"
+import { projectInfo } from "@/constants/projectConstants"
 
 const DynamicProjectPage = async ({
   params,

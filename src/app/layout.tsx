@@ -1,6 +1,6 @@
-import type { Metadata } from "next"
 import "./globals.css"
 import Navbar from "@/components/navbar"
+import type { Metadata } from "next"
 import { interSansFont } from "@/utils/fonts"
 import { SeoKeyWords } from "@/constants"
 
