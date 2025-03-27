@@ -77,7 +77,7 @@ const DetailedProjectInfo = ({ data }: { data: typeof projectInfo }) => {
           </section>
 
           {/* overview */}
-          <div className="p-4">
+          <div className="mt-6">
             <p
               className="description mx-auto mb-4 text-justify text-pretty"
               dangerouslySetInnerHTML={{ __html: project.description }}
