@@ -5,7 +5,7 @@ import Projects from "@/sections/Projects"
 import Experience from "@/sections/Experience"
 import ProjectsText from "@/sections/ProjectsText"
 import Services from "@/sections/Services"
-import Footer from "@/components/footer"
+import Footer from "../components/footer"
 import { Particles } from "@/components/magicui/particles"
 
 export default function Home() {

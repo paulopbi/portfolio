@@ -2,7 +2,7 @@ import React from "react"
 import CardProject from "@/components/card-project"
 import { projectInfo } from "@/constants/projectConstants"
 import { TextAnimate } from "@/components/magicui/text-animate"
-import Footer from "@/components/footer"
+import Footer from "../../components/footer"
 
 const ProjectsPage = () => {
   return (
