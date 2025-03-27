@@ -3,12 +3,9 @@ import { SeoKeyWords } from "@/constants"
 
 export const metadata: Metadata = {
   title: "Paulo Victor - Contato",
-  description: "modificar",
+  description: "Portfolio do programador Paulo Victor Silva Rosa",
   authors: {
     name: "Paulo Victor Silva Rosa",
-  },
-  icons: {
-    icon: "./src/app/favicon.ico",
   },
   keywords: SeoKeyWords,
 }
