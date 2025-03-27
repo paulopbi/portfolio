@@ -3,7 +3,7 @@ import DetailedProjectInfo from "@/components/detailed-project"
 import { projectInfo } from "@/constants/projectConstants"
 import Footer from "@/components/footer"
 
-const ProjectPage = async ({
+const DynamicProjectPage = async ({
   params,
 }: {
   params: Promise<{ slug: string }>
@@ -24,4 +24,4 @@ const ProjectPage = async ({
   if (!filteredProjectData) return <p>Não encontrado</p>
 }
 
-export default ProjectPage
+export default DynamicProjectPage
