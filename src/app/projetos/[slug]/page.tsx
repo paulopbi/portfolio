@@ -1,7 +1,7 @@
 import React from "react"
 import DetailedProjectInfo from "@/components/detailed-project"
-import Footer from "../../../components/footer"
-import NavBar from "@/components/nav-bar"
+import Footer from "@/components/ui/footer"
+import NavBar from "@/components/ui/navbar"
 import { projectInfo } from "@/constants/projectConstants"
 
 const DynamicProjectPage = async ({

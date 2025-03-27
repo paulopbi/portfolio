@@ -2,8 +2,8 @@ import React from "react"
 import CardProject from "@/components/card-project"
 import { projectInfo } from "@/constants/projectConstants"
 import { TextAnimate } from "@/components/magicui/text-animate"
-import Footer from "../../components/footer"
-import NavBar from "@/components/nav-bar"
+import Footer from "@/components/ui/footer"
+import NavBar from "@/components/ui/navbar"
 
 const ProjectsPage = () => {
   return (

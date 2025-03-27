@@ -1,10 +1,10 @@
 import Image from "next/image"
 import React from "react"
 import ContactPicture from "@/assets/images/picture_contact.jpg"
-
 import { contactsPageLinks } from "@/constants/contactConstants"
 import { Button } from "@/components/ui/button"
 import { Particles } from "@/components/magicui/particles"
+
 const Contact = () => {
   return (
     <section className="relative z-10 container flex min-h-dvh flex-col items-center justify-center gap-2">

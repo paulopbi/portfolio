@@ -5,9 +5,9 @@ import Projects from "@/sections/Projects"
 import Experience from "@/sections/Experience"
 import ProjectsText from "@/sections/ProjectsText"
 import Services from "@/sections/Services"
-import Footer from "../components/footer"
+import Footer from "@/components/ui/footer"
+import NavBar from "@/components/ui/navbar"
 import { Particles } from "@/components/magicui/particles"
-import NavBar from "@/components/nav-bar"
 
 export default function Home() {
   return (
