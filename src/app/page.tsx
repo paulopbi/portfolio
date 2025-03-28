@@ -15,8 +15,8 @@ export default function HomePage() {
       <NavBar />
       <Particles
         className="absolute inset-0 z-0 h-full w-full"
-        quantity={290}
-        ease={120}
+        quantity={300}
+        ease={1200}
         color="#ccc"
         refresh
       />
