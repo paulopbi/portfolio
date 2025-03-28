@@ -17,7 +17,7 @@ const Experience = () => {
         </TextAnimate>
         <p className="description mx-auto max-w-[50ch]">
           Ao longo da minha carreira, tive a chance de trabalhar em diferentes
-          cenários, alguns deles são
+          cenários, alguns deles são.
         </p>
       </div>
 
