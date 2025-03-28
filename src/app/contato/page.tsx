@@ -8,12 +8,12 @@ const ContactPage = () => {
       <NavBar />
       <Particles
         className="absolute top-0 left-0 z-0 size-full"
-        quantity={290}
-        ease={120}
+        quantity={160}
+        ease={2000}
         color="#ccc"
         refresh
       />
-      <section className="relative z-10 container flex min-h-dvh flex-col items-center justify-center">
+      <section className="relative z-10 container flex min-h-full flex-col items-center justify-center">
         <Contact />
       </section>
     </>
