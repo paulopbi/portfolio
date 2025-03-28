@@ -1,3 +1,4 @@
+"use client"
 import React from "react"
 import CardProject from "@/components/card-project"
 import { projectInfo } from "@/constants/projectConstants"
