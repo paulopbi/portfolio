@@ -27,12 +27,12 @@ function SkillColumn(props: {
               {props.stacks.map((stack) => (
                 <div
                   key={stack.name}
-                  className="bg-foreground border-brand flex min-h-[140px] w-[150px] flex-col items-center justify-center gap-5 rounded-3xl border-2 px-4 py-6"
+                  className="bg-foreground border-brand flex min-h-[140px] min-w-[152px] flex-col items-center justify-center gap-5 rounded-3xl border-2 px-4 py-6"
                 >
-                  <h5 className="text-center text-sm font-bold">
+                  <h5 className="text-lg font-medium tracking-tight">
                     {stack.name}
                   </h5>
-                  <stack.icon width={36} height={36} />
+                  <stack.icon width={34} height={34} />
                 </div>
               ))}
             </React.Fragment>
@@ -48,7 +48,7 @@ const Skills = () => {
   const secoundColumn = [...skillStacks].reverse()
 
   return (
-    <section className="container mt-20 grid grid-cols-1 items-center md:grid-cols-2">
+    <section className="container mt-20 grid grid-cols-1 items-start justify-start md:grid-cols-2">
       <div className="text-center">
         <TextAnimate
           className="subtitle--heading"
@@ -68,10 +68,10 @@ const Skills = () => {
       {/* vertical marquee effect */}
       <div className="relative container mx-auto">
         <div className="mt-10 flex max-h-[738px] justify-center gap-6 overflow-hidden [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)]">
-          <SkillColumn stacks={firstColumn} duration={40} />
+          <SkillColumn stacks={firstColumn} duration={30} />
           <SkillColumn
             stacks={secoundColumn}
-            duration={60}
+            duration={40}
             className="hidden md:block"
           />
         </div>
