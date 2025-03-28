@@ -19,7 +19,7 @@ function SkillColumn(props: {
           ease: "linear",
           repeatType: "loop",
         }}
-        className="flex flex-col gap-6 pb-6"
+        className="flex flex-col gap-6"
       >
         {[
           ...new Array(2).fill(0).map((_, index) => (
@@ -27,11 +27,9 @@ function SkillColumn(props: {
               {props.stacks.map((stack) => (
                 <div
                   key={stack.name}
-                  className="bg-foreground border-brand flex min-h-[140px] min-w-[152px] flex-col items-center justify-center gap-5 rounded-3xl border-2 px-4 py-6"
+                  className="bg-foreground border-brand flex min-h-[140px] min-w-[152px] flex-col items-center justify-center gap-2 rounded-3xl border-2 p-6"
                 >
-                  <h5 className="text-lg font-medium tracking-tight">
-                    {stack.name}
-                  </h5>
+                  <h5 className="description text-center">{stack.name}</h5>
                   <stack.icon width={34} height={34} />
                 </div>
               ))}
@@ -44,8 +42,8 @@ function SkillColumn(props: {
 }
 
 const Skills = () => {
-  const firstColumn = [...skillStacks]
-  const secoundColumn = [...skillStacks].reverse()
+  const firstColumn = skillStacks
+  const secoundColumn = skillStacks.slice(7)
 
   return (
     <section className="container mt-20 grid grid-cols-1 items-start justify-start md:grid-cols-2">
@@ -67,7 +65,7 @@ const Skills = () => {
 
       {/* vertical marquee effect */}
       <div className="relative container mx-auto">
-        <div className="mt-10 flex max-h-[738px] justify-center gap-6 overflow-hidden [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)]">
+        <div className="flex max-h-[738px] justify-center gap-8 overflow-hidden [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)]">
           <SkillColumn stacks={firstColumn} duration={30} />
           <SkillColumn
             stacks={secoundColumn}
