@@ -5,7 +5,6 @@ import Link from "next/link"
 import HeroImage from "@/assets/images/picture_hero.jpg"
 import { rotatingTextWords } from "@/constants"
 import { Button } from "@/components/ui/button"
-import { BricolageGrotesqueFont } from "@/utils/fonts"
 import { WordRotate } from "@/components/magicui/word-rotate"
 import { ArrowUpRight } from "lucide-react"
 
@@ -21,10 +20,7 @@ const Hero = () => {
           </span>
           <h1 className="title mt-1 text-white">
             Transformando ideias em interfaces incríveis com
-            <WordRotate
-              className={`title w-fit justify-center overflow-hidden rounded-md ${BricolageGrotesqueFont.className}`}
-              words={rotatingTextWords}
-            />
+            <WordRotate className="title" words={rotatingTextWords} />
           </h1>
         </div>
 
