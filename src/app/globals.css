@@ -52,8 +52,16 @@ strong {
     @apply my-4 font-[Bricolage_Grotesque] text-3xl font-bold tracking-tight text-white;
   }
 
+  .title--caption {
+    @apply font-[Bricolage_Grotesque] text-base font-bold md:text-lg;
+  }
+
   .subtitle--heading {
     @apply text-brand/90 font-[Bricolage_Grotesque] text-2xl font-bold tracking-wide md:text-4xl;
+  }
+
+  .subtitle--caption {
+    @apply text-muted font-[Inter] text-sm font-light;
   }
 }
 
