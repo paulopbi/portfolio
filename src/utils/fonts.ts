@@ -1,7 +1,7 @@
 import { Bricolage_Grotesque, Inter } from "next/font/google"
 
 export const interSansFont = Inter({
-  weight: ["400", "500", "600"],
+  weight: ["300", "400", "500", "600"],
   style: "normal",
   subsets: ["latin"],
 })
