@@ -3,19 +3,10 @@ import React from "react"
 import ContactPicture from "@/assets/images/picture_contact.jpg"
 import { contactsPageLinks } from "@/constants/contactConstants"
 import { Button } from "@/components/ui/button"
-import { Particles } from "@/components/magicui/particles"
 
 const Contact = () => {
   return (
-    <section className="relative z-10 container flex min-h-dvh flex-col items-center justify-center gap-2">
-      <Particles
-        className="absolute inset-0 z-0 h-full w-full"
-        quantity={290}
-        ease={120}
-        color="#ccc"
-        refresh
-      />
-
+    <section className="container flex min-h-dvh flex-col items-center justify-center gap-2">
       {/* image */}
       <div className="relative z-10 mx-auto mb-2 size-52 overflow-hidden rounded-full border-3 border-white/50 duration-75 ease-in hover:scale-[1.1]">
         <Image
