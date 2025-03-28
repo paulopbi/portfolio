@@ -5,8 +5,8 @@ export interface IInformativeAccordion {
   subtitle: string
   description: string
   year: string
-  href?: string
-  linkName?: string
+  href?: string | null
+  linkName?: string | null
 }
 
 export interface ICardProject {

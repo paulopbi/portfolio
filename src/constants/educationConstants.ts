@@ -4,8 +4,8 @@ export const educationalSectionData = [
     subtitle: "unicesumar",
     year: "Mar de 2022 – Set de 2024",
     description:
-      "Sou formado pela faculdade Unicesumar, com inicio em 2022 - 2024.",
-    href: "/certificado",
+      "Graduado no curso superior de Análise e Desenvolvimento de Sistemas pela UniCesumar. Durante minha formação, adquiri conhecimento sólido sobre os conceitos básicos e avançados da área, desenvolvendo habilidades essenciais para atuar como analista de sistemas e aplicando as melhores práticas do mercado.",
+    href: null,
     linkName: "Certificado",
   },
   {
@@ -13,8 +13,8 @@ export const educationalSectionData = [
     subtitle: "escola técnica sandra silva",
     year: "Jan de 2019 – Dez de 2020",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, rerum! Soluta voluptas ab debitis architecto. Illum at qui fugit ipsa, minus modi, nulla obcaecati alias commodi eum animi in. Fugit.",
-    href: "/certificado",
+      "Concluí o curso técnico em Eletrotécnica pela Escola Técnica Sandra Silva em 2020, adquirindo qualificação para atuar no mercado de trabalho com competência e responsabilidade. Durante a formação, desenvolvi habilidades teóricas e práticas para trabalhar com sistemas elétricos e eletrônicos em diversos contextos industriais e residenciais.",
+    href: null,
     linkName: "Certificado",
   },
 ]
