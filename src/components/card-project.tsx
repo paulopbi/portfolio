@@ -1,11 +1,17 @@
 "use client"
-import Image from "next/image"
 import Link from "next/link"
-import { ICardProject } from "@/types"
+import Image, { StaticImageData } from "next/image"
 import { motion } from "framer-motion"
 import { Button } from "./ui/button"
 import { ArrowUpRight } from "lucide-react"
 import { highlightTags } from "@/lib/utils"
+
+interface ICardProject {
+  imageSrc: StaticImageData | string
+  title: string
+  skills: string[]
+  hrefTo: string | URL
+}
 
 const CardProject = ({ imageSrc, title, skills, hrefTo }: ICardProject) => {
   return (
