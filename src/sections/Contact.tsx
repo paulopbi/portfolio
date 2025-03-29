@@ -1,8 +1,8 @@
 import Image from "next/image"
 import React from "react"
 import ContactPicture from "@/assets/images/picture_contact.jpg"
+import HeadingTitle from "@/components/ui/heading-title"
 import { contactsPageLinks } from "@/constants/contactConstants"
-import { Button } from "@/components/ui/button"
 
 const Contact = () => {
   return (
@@ -20,24 +20,22 @@ const Contact = () => {
 
       {/* texts */}
       <div className="mb-10 inline-flex flex-col items-center justify-center gap-1">
-        <h6 className="subtitle text-brand">Paulo Victor Silva</h6>
+        <HeadingTitle title="Paulo Victor Silva" />
         <span className="description">Me siga nas redes sociais abaixo 👇🏾</span>
       </div>
 
       {/* links */}
-
       <div className="mb-10 flex w-full max-w-[540px] flex-col items-center justify-center gap-4">
         {contactsPageLinks.map((link) => (
-          <Button
-            asChild
+          <a
+            className="glow-on-hover"
+            href={link.href}
             key={link.name}
-            variant="outline"
-            className="min-h-[40px] w-full uppercase"
+            target="_blank"
+            rel="noreferrer"
           >
-            <a href={link.href} target="_blank" rel="noreferrer">
-              {link.name}
-            </a>
-          </Button>
+            {link.name}
+          </a>
         ))}
       </div>
     </section>
