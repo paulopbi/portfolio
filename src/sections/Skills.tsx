@@ -1,7 +1,7 @@
 "use client"
 import React from "react"
+import HeadingTitle from "@/components/ui/heading-title"
 import { motion } from "framer-motion"
-import { TextAnimate } from "@/components/magicui/text-animate"
 import { skillStacks } from "@/constants/skillsConstants"
 
 function SkillColumn(props: {
@@ -47,24 +47,17 @@ const Skills = () => {
 
   return (
     <section className="container mt-20 grid grid-cols-1 items-start justify-start md:grid-cols-2">
+      {/* heading */}
       <div className="text-center">
-        <TextAnimate
-          className="subtitle--heading"
-          by="character"
-          as={"h2"}
-          animation="scaleDown"
-        >
-          Habilidades
-        </TextAnimate>
-        <p className="description mx-auto max-w-[50ch]">
+        <HeadingTitle title="Habilidades">
           Cada quadrado desse representa uma etapa da minha jornada de
           aprendizado e prática, juntas, essas tecnologias formam o conjunto de
           ferramentas que uso para criar experiências digitais impactantes.
-        </p>
+        </HeadingTitle>
       </div>
 
       {/* vertical marquee effect */}
-      <div className="relative container mx-auto">
+      <div className="container mx-auto">
         <div className="flex max-h-[738px] justify-center gap-8 overflow-hidden [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)]">
           <SkillColumn stacks={firstColumn} duration={30} />
           <SkillColumn
