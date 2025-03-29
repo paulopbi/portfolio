@@ -1,36 +1,56 @@
-"use client"
-import InformativeAccordion from "@/components/informative-accordion"
-import { TextAnimate } from "@/components/magicui/text-animate"
+import HeadingTitle from "@/components/ui/heading-title"
+import { AccordionHeader } from "@radix-ui/react-accordion"
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
 import { experienceSectionData } from "@/constants/experienceConstants"
 
 const Experience = () => {
   return (
     <section className="container mt-20 grid grid-cols-1 items-center gap-10 md:grid-cols-2">
+      {/* heading */}
       <div className="text-center md:order-2">
-        <TextAnimate
-          className="subtitle--heading"
-          by="character"
-          as={"h2"}
-          animation="scaleDown"
-        >
-          Experiência Profissional
-        </TextAnimate>
-        <p className="description mx-auto max-w-[50ch]">
+        <HeadingTitle title="Experiência Profissional">
           Ao longo da minha carreira, tive a chance de trabalhar em diferentes
           cenários, alguns deles são.
-        </p>
+        </HeadingTitle>
       </div>
 
       <article className="mx-auto w-full md:order-1">
-        {/* card with job info */}
+        {/* accordion with job info */}
         {experienceSectionData.map((experience) => (
-          <InformativeAccordion
+          <Accordion
+            type="single"
+            collapsible
             key={experience.title}
-            title={experience.title}
-            subtitle={experience.subtitle}
-            description={experience.description}
-            year={experience.year}
-          />
+            className="w-full border-b border-white/10"
+          >
+            <AccordionItem value="item-1">
+              <AccordionTrigger>
+                <AccordionHeader className="flex w-full cursor-pointer flex-col items-start">
+                  <div>
+                    <h5 className="title--caption capitalize">
+                      {experience.title}
+                    </h5>
+                  </div>
+                  <div className="mt-1 inline-flex w-full items-center justify-between gap-8">
+                    <h6 className="subtitle--caption capitalize">
+                      {experience.subtitle}
+                    </h6>
+                    <p className="text-muted/70 text-xs font-light capitalize">
+                      {experience.year}
+                    </p>
+                  </div>
+                </AccordionHeader>
+              </AccordionTrigger>
+              <AccordionContent>
+                <p className="description">{experience.description}</p>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         ))}
       </article>
     </section>
