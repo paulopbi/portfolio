@@ -1,4 +1,3 @@
-"use client"
 import React from "react"
 import Image from "next/image"
 import Link from "next/link"
@@ -12,33 +11,37 @@ const Hero = () => {
   return (
     <section className="container my-8 flex min-h-[550px] w-full flex-col items-center justify-center gap-6 overflow-hidden md:justify-around lg:flex-row">
       {/* left side */}
-      <div className="z-10 order-2 col-span-2 max-w-[600px] flex-1 lg:order-1 lg:max-w-full">
+      <div className="z-10 order-2 col-span-2 flex-1 lg:order-1 lg:max-w-full">
         {/* caption and rotating title */}
         <div>
           <span className="text-xs font-normal text-white/20 italic">
             Bem-vindo ao meu universo de pixels e possibilidades!
           </span>
-          <h1 className="title mt-1 text-white">
-            Transformando ideias em interfaces incríveis com
-            <WordRotate className="title" words={rotatingTextWords} />
+          <h1 className="title mt-1 max-w-[18ch] text-white">
+            Transformando ideias em interfaces incríveis utilizando
+            <WordRotate
+              className="title"
+              words={rotatingTextWords}
+              duration={3000}
+            />
           </h1>
         </div>
 
         {/* description */}
         <div className="mt-2">
-          <p className="description">
+          <p className="description max-w-[50ch]">
             Olá mundo! Me chamo <strong>Paulo Victor Silva Rosa</strong>, sou um{" "}
-            <strong>desenvolvedor frontend</strong>.{" "}
-          </p>
-
-          <p className="description mt-2">
-            Se você procura alguém que entende o poder de uma boa
-            <strong>interface</strong> e sabe como{" "}
+            <strong>desenvolvedor frontend</strong>. <br />
+            <br /> Se{" "}
+            <strong>
+              você procura alguém que entende o poder de uma boa interface
+            </strong>{" "}
+            e sabe como{" "}
             <strong>transformar problemas em soluções elegantes</strong>, você
             veio ao lugar certo.{" "}
           </p>
 
-          <p className="description mt-2">
+          <p className="description mt-2 max-w-[300px]">
             Vamos construir algo incrível juntos? 👷🏾‍♂️
           </p>
         </div>
@@ -69,7 +72,7 @@ const Hero = () => {
           width={500}
           height={500}
           alt="Foto do programador Paulo Victor"
-          className="aspect-square h-[400px] w-[400px] rounded-2xl border object-cover object-center"
+          className="mx-auto aspect-square h-[400px] w-[400px] rounded-4xl border-2 border-white/20 object-cover object-center"
         />
       </div>
     </section>
