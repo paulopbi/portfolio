@@ -9,7 +9,7 @@ import { ArrowUpRight } from "lucide-react"
 
 const Hero = () => {
   return (
-    <section className="container my-8 flex min-h-[550px] w-full flex-col items-center justify-center gap-6 overflow-hidden md:justify-around lg:flex-row">
+    <section className="container my-8 flex min-h-[550px] w-full flex-col items-center justify-center gap-6 lg:flex-row">
       {/* left side */}
       <div className="z-10 order-2 col-span-2 flex-1 lg:order-1 lg:max-w-full">
         {/* caption and rotating title */}
@@ -72,7 +72,7 @@ const Hero = () => {
           width={500}
           height={500}
           alt="Foto do programador Paulo Victor"
-          className="mx-auto aspect-square h-[400px] w-[400px] rounded-4xl border-2 border-white/20 object-cover object-center"
+          className="ml-auto aspect-square h-[400px] w-[400px] rounded-4xl border-2 border-white/20 object-cover object-center"
         />
       </div>
     </section>
