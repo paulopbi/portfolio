@@ -14,17 +14,6 @@ body {
   font-family: "Inter", "Geist", sans-serif;
 }
 
-strong {
-  font-weight: 700;
-  color: #fff;
-}
-
-.container {
-  max-width: 1000px;
-  margin-inline: auto;
-  padding-inline: 1rem;
-}
-
 @layer components {
   /* standart */
   .title {
@@ -62,6 +51,98 @@ strong {
 
   .subtitle--caption {
     @apply text-muted font-[Inter] text-sm font-light;
+  }
+}
+
+/* modified tags */
+strong {
+  font-weight: 700;
+  color: #fff;
+}
+
+.container {
+  margin-inline: auto;
+  padding-inline: 1rem;
+  max-width: 1200px;
+}
+
+.glow-on-hover {
+  display: inline-block;
+  width: 100%;
+  padding: 0.865rem 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid var(--color-muted);
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  color: var(--color-muted);
+  background: var(--color-foreground);
+}
+
+.glow-on-hover:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
   }
 }
 
