@@ -2,7 +2,22 @@ import React from "react"
 import DetailedProjectInfo from "@/components/detailed-project"
 import Footer from "@/components/ui/footer"
 import NavBar from "@/components/ui/navbar"
-import { projectInfo } from "@/constants/projectConstants"
+import { allProjects } from "@/constants/projectConstants"
+
+interface PageParams {
+  params: Promise<{
+    slug: string
+  }>
+}
+
+export async function generateMetadata({ params }: PageParams) {
+  const { slug } = await params
+  const clearProjectName = slug.trim().replaceAll("-", " ")
+  return {
+    title: `Paulo Victor | ${clearProjectName}`,
+    description: `Projeto '${clearProjectName}' feito pelo programador Paulo Victor.`,
+  }
+}
 
 const DynamicProjectPage = async ({
   params,
