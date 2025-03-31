@@ -3,6 +3,7 @@ import DetailedProjectInfo from "@/components/detailed-project"
 import Footer from "@/components/ui/footer"
 import NavBar from "@/components/ui/navbar"
 import { allProjects } from "@/constants/projectConstants"
+import NotFound from "@/app/not-found"
 
 interface PageParams {
   params: Promise<{
@@ -25,20 +26,26 @@ const DynamicProjectPage = async ({
   params: Promise<{ slug: string }>
 }) => {
   const { slug } = await params
-  const filteredProjectData = projectInfo.filter(
-    (project) => project.slug === slug,
-  )
+  const projectData = allProjects.filter((project) => project.slug === slug)
+  const emptyArray = 0
 
-  if (filteredProjectData)
+  if (projectData.length === emptyArray)
     return (
       <>
         <NavBar />
-        <DetailedProjectInfo data={filteredProjectData} />
+        <NotFound />
         <Footer />
       </>
     )
 
-  if (!filteredProjectData) return <p>Não encontrado</p>
+  if (projectData)
+    return (
+      <>
+        <NavBar />
+        <DetailedProjectInfo data={projectData} />
+        <Footer />
+      </>
+    )
 }
 
 export default DynamicProjectPage
