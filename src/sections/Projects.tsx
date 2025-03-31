@@ -1,11 +1,11 @@
 import Link from "next/link"
 import CardProject from "@/components/card-project"
 import { Button } from "@/components/ui/button"
-import { projectInfo } from "@/constants/projectConstants"
+import { allProjects } from "@/constants/projectConstants"
 
 const Projects = () => {
-  const showFourProjects = projectInfo.filter((project) => project.main)
-  const totalProjectsNumber = projectInfo.length
+  const showFourProjects = allProjects.filter((project) => project.main)
+  const totalProjectsNumber = allProjects.length
   return (
     <section className="container my-18">
       {/* projects */}
