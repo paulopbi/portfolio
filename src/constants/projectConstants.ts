@@ -35,12 +35,12 @@ const projectDescription = {
               O projeto completo foi publicado no <strong>Behance</strong>, onde você pode conferir todos os detalhes do design acessando o link acima. Este trabalho reflete minha habilidade em criar designs funcionais e esteticamente impactantes, sempre priorizando a experiência do usuário e a qualidade visual.`,
 }
 
-export const projectInfo = [
+export const allProjects = [
   {
     main: true,
     image_url: Dogs.src,
-    title: "dogs",
     slug: "dogs",
+    title: "Dogs",
     year: 2024,
     tags: ["next js", "css", "typescript", "JWT"],
     description: projectDescription.dogs,
@@ -50,8 +50,8 @@ export const projectInfo = [
   {
     main: true,
     image_url: MovieMate.src,
-    title: "movie mate",
     slug: "movie-mate",
+    title: "Movie Mate",
     year: 2024,
     tags: ["react js", "tailwind css", "appwrite", "debounce", "TMDB API"],
     description: projectDescription.movieMate,
@@ -61,8 +61,8 @@ export const projectInfo = [
   {
     main: true,
     image_url: Sass.src,
-    title: "saas landing page",
     slug: "saas-landing-page",
+    title: "Saas Landing Page",
     year: 2024,
     tags: ["next js", "tailwind css", "motion", "typescript"],
     description: projectDescription.saas,
@@ -73,7 +73,7 @@ export const projectInfo = [
     main: true,
     image_url: FlashDash.src,
     slug: "flashdash",
-    title: "flashdash",
+    title: "Flashdash",
     tags: ["react js", "typescript", "tailwind css", "shadcn", "unsplash api"],
     year: 2024,
     description: projectDescription.flashdash,
@@ -84,7 +84,7 @@ export const projectInfo = [
     main: false,
     image_url: CodeLandia,
     slug: "codelandia",
-    title: "codelândia",
+    title: "Codelandia",
     tags: ["html", "css"],
     year: 2024,
     description: projectDescription.codelandia,
@@ -95,7 +95,7 @@ export const projectInfo = [
     main: false,
     image_url: RickAndMorty.src,
     slug: "rick-and-morty",
-    title: "rick and morty",
+    title: "Rick And Morty",
     tags: ["react js", "motion", "css", "javascript"],
     year: 2024,
     description: projectDescription.rickAndMorty,
@@ -106,7 +106,7 @@ export const projectInfo = [
     main: false,
     image_url: LemonPeper,
     slug: "lemon-peper",
-    title: "lemon peper",
+    title: "Lemon Peper",
     tags: ["ui design", "figma", "photoshop"],
     year: 2024,
     description: projectDescription.lemonPeper,
