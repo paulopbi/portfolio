@@ -5,11 +5,11 @@ import Link from "next/link"
 import { motion } from "framer-motion"
 import { Button } from "./ui/button"
 import { ArrowLeft, ArrowUpRightIcon } from "lucide-react"
-import { projectInfo } from "@/constants/projectConstants"
+import { allProjects } from "@/constants/projectConstants"
 import { TextAnimate } from "./magicui/text-animate"
 import { highlightTags } from "@/lib/utils"
 
-const DetailedProjectInfo = ({ data }: { data: typeof projectInfo }) => {
+const DetailedProjectInfo = ({ data }: { data: typeof allProjects }) => {
   return (
     <section className="container">
       {/* navegation on top */}
