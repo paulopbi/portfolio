@@ -63,7 +63,7 @@ strong {
 .container {
   margin-inline: auto;
   padding-inline: 1rem;
-  max-width: 1200px;
+  max-width: 1000px;
 }
 
 .glow-on-hover {
