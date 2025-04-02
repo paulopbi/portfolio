@@ -1,11 +1,12 @@
 import React from "react"
-import CardProject from "@/components/card-project"
+import CardProject from "@/components/ui/card-project"
 import Footer from "@/components/ui/footer"
 import NavBar from "@/components/ui/navbar"
 import HeadingTitle from "@/components/ui/heading-title"
 import { allProjects } from "@/constants/projectConstants"
 import { Metadata } from "next"
 import { SeoKeyWords } from "@/constants"
+import { Particles } from "@/components/magicui/particles"
 
 export const metadata: Metadata = {
   title: "Paulo Victor | Projetos",
@@ -55,9 +56,18 @@ const ProjectsPage = () => {
   return (
     <>
       <NavBar />
-      <section className="relative container mt-10 mb-20">
+      <Particles
+        className="absolute inset-0 z-0 size-full"
+        quantity={160}
+        ease={2000}
+        refresh
+      />
+      <section className="relative container my-20">
         <div className="text-center">
-          <HeadingTitle title="Todos Os Meus Projetos" />
+          <HeadingTitle title="Todos Os Projetos">
+            Aqui estão todos os meus projetos, sinta-se livre para explorar, no
+            total são {`${allProjects.length}`} projetos.
+          </HeadingTitle>
         </div>
 
         {/* card content */}
