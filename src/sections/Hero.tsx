@@ -15,7 +15,7 @@ const Hero = () => {
         {/* caption and rotating title */}
         <div>
           <span className="text-xs font-normal text-white/20 italic">
-            Bem-vindo ao meu universo de pixels e possibilidades!
+            De linhas de código a experiências incríveis.
           </span>
           <h1 className="title mt-1 max-w-[18ch] text-white">
             Transformando ideias em interfaces incríveis utilizando
@@ -32,17 +32,18 @@ const Hero = () => {
           <p className="description max-w-[50ch]">
             Olá mundo! Me chamo <strong>Paulo Victor Silva Rosa</strong>, sou um{" "}
             <strong>desenvolvedor frontend</strong>. <br />
-            <br /> Se{" "}
+            <br />
+            Minha jornada começou &apos;quebrando a cabeça com CSS&apos; e hoje
+            me especializo em <strong>Next.js, React e TypeScript</strong> para
+            criar{" "}
             <strong>
-              você procura alguém que entende o poder de uma boa interface
-            </strong>{" "}
-            e sabe como{" "}
-            <strong>transformar problemas em soluções elegantes</strong>, você
-            veio ao lugar certo.{" "}
+              aplicações que não só impressionam, mas também entregam resultados
+            </strong>
+            .
           </p>
 
           <p className="description mt-2 max-w-[300px]">
-            Vamos construir algo incrível juntos? 👷🏾‍♂️
+            Vamos construir algo <strong>incrível juntos?</strong> 👷🏾‍♂️
           </p>
         </div>
 
@@ -60,7 +61,7 @@ const Hero = () => {
           </Button>
 
           <Button asChild className="ml-4" variant="outline">
-            <Link href="/contato">Contato</Link>
+            <Link href="/projetos">Projetos</Link>
           </Button>
         </div>
       </div>
