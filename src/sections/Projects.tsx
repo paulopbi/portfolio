@@ -1,5 +1,5 @@
 import Link from "next/link"
-import CardProject from "@/components/card-project"
+import CardProject from "@/components/ui/card-project"
 import { Button } from "@/components/ui/button"
 import { allProjects } from "@/constants/projectConstants"
 
