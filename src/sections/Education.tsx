@@ -11,23 +11,22 @@ import { educationalSectionData } from "@/constants/educationConstants"
 
 const Education = () => {
   return (
-    <section className="container mt-20 grid grid-cols-1 items-center gap-10 md:mt-50 md:grid-cols-2">
+    <section className="container mt-20 grid grid-cols-1 items-start gap-10 md:mt-50 md:grid-cols-2">
       <div className="text-center">
         <HeadingTitle title="Estudos">
-          Para mim, estudo e trabalho andam juntos. Cada nova aprendizagem é um
-          passo rumo à excelência no que faço.
+          A tecnologia avança rápido, e meu compromisso é acompanhar esse ritmo.
+          Aqui estão os aprendizados que me ajudaram a chegar até aqui.
         </HeadingTitle>
       </div>
 
       <article className="mx-auto w-full">
-        {educationalSectionData.map((education) => (
-          <Accordion
-            type="single"
-            collapsible
-            key={education.title}
-            className="w-full border-b border-white/10"
-          >
-            <AccordionItem value="item-1">
+        <Accordion type="single" collapsible className="w-full">
+          {educationalSectionData.map((education, index) => (
+            <AccordionItem
+              key={education.title}
+              value={`item-${index}`}
+              className="border-b border-white/10"
+            >
               <AccordionTrigger>
                 <AccordionHeader className="flex w-full cursor-pointer flex-col items-start">
                   <div>
@@ -58,8 +57,8 @@ const Education = () => {
                 )}
               </AccordionContent>
             </AccordionItem>
-          </Accordion>
-        ))}
+          ))}
+        </Accordion>
       </article>
     </section>
   )
