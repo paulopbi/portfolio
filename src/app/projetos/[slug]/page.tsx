@@ -1,9 +1,9 @@
 import React from "react"
-import DetailedProjectInfo from "@/components/detailed-project"
+import DetailedProjectInfo from "@/app/projetos/_components/detailed-project"
 import Footer from "@/components/ui/footer"
 import NavBar from "@/components/ui/navbar"
-import { allProjects } from "@/constants/projectConstants"
 import NotFound from "@/app/not-found"
+import { allProjects } from "@/constants/projectConstants"
 
 interface PageParams {
   params: Promise<{
@@ -33,7 +33,7 @@ const DynamicProjectPage = async ({
     return (
       <>
         <NavBar />
-        <NotFound />
+        <NotFound titleMessage="Não foi possível encontrar este projeto, tente novamente com outro nome." />
         <Footer />
       </>
     )
