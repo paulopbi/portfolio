@@ -25,7 +25,7 @@ body {
   }
 
   .description {
-    @apply text-muted font-[Inter] text-sm font-normal tracking-tight md:text-base;
+    @apply text-muted font-[Inter] text-sm font-normal tracking-tight text-pretty md:text-base;
   }
 
   .badge-style {
@@ -46,7 +46,7 @@ body {
   }
 
   .subtitle--heading {
-    @apply text-brand/90 font-[Bricolage_Grotesque] text-2xl font-bold tracking-wide md:text-4xl;
+    @apply text-brand/90 font-[Bricolage_Grotesque] text-2xl font-bold tracking-wide text-pretty break-all md:text-4xl;
   }
 
   .subtitle--caption {
