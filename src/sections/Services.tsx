@@ -8,7 +8,8 @@ const Services = () => {
       {/* heading */}
       <div className="mb-8 text-center">
         <HeadingTitle title="Serviços">
-          Meus serviços abrangem três áreas essenciais no processo de criação.
+          Não é só código, entregas pensadas para resolver seu problema, da
+          ideia ao deploy. Aqui está o que posso fazer por você.
         </HeadingTitle>
       </div>
 

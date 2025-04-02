@@ -1,16 +1,23 @@
 export const experienceSectionData = [
   {
-    title: "suporte técnico de redes",
-    subtitle: "brisa telecom",
+    title: "Suporte Técnico de Redes",
+    subtitle: "Brisa Telecom",
     description:
-      "Administrei dispositivos de rede usando o protocolo TR-69, facilitando o acesso remoto e reduzindo a necessidade de visitas técnicas. Foram resolvidos problemas de conectividade com um atendimento ágil e preciso, auxiliando clientes na configuração de modens, roteadores e telefones IP VOIP. Adotei uma abordagem didática no suporte, explicando soluções de forma clara para aumentar a satisfação do usuário.",
-    year: "Fev de 2024 – Ago de 2024",
+      "Administrei dispositivos de rede usando o protocolo TR-69, facilitando o acesso remoto e reduzindo a necessidade de visitas técnicas, realizei manutenção em roteadores, ONU, telefones IP VOIP entre outros. Adotei uma abordagem didática no suporte, explicando soluções de forma clara para aumentar a satisfação do usuário.",
+    year: "Fev 2024 – Ago 2024",
   },
   {
-    title: "operador de logistica I",
+    title: "auxiliar de Produção",
+    subtitle: "Botafogo Cultura & Lazer",
+    description:
+      "A empresa é especializada na fabricação de produtos de lazer, como cadeiras de praia, carrinhos de mão e guarda sol entre outros, eu atuava operando as máquinas que produziam esses produtos.",
+    year: "Set 2022 – Fev 2024",
+  },
+  {
+    title: "Operador de Logística I",
     subtitle: "Americanas S.A",
     description:
-      "Trabalho no setor de picking com o sistema WMS, realizando a separação de produtos de forma rápida e precisa, garantindo que fossem corretamente encaminhados para consolidação e envio às lojas. Trabalho em conformidade com os procedimentos do sistema WMS (Warehouse Management System), que é um software que ajuda a gerir e controlar as operações de armazéns e centros de distribuição.",
-    year: "Fev de 2025 – Atualmente",
+      "Trabalhei no setor de picking/separação, utilizavamos o sistema WMS (Warehouse Management System), que é um software que ajuda a gerir e controlar as operações de armazéns e centros de distribuição, permitindo separar corretamente os produtos, enviar a consolidação e depois enviar ao usuário final.",
+    year: "Temporário",
   },
 ]

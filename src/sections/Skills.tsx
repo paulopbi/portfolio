@@ -50,9 +50,8 @@ const Skills = () => {
       {/* heading */}
       <div className="text-center">
         <HeadingTitle title="Habilidades">
-          Cada quadrado desse representa uma etapa da minha jornada de
-          aprendizado e prática, juntas, essas tecnologias formam o conjunto de
-          ferramentas que uso para criar experiências digitais impactantes.
+          Cada uma dessas tecnologias marcou um passo na minha evolução como
+          dev. Juntas, elas formam minha caixa de ferramentas para criação.
         </HeadingTitle>
       </div>
 

@@ -4,10 +4,10 @@ import { TextReveal } from "@/components/magicui/text-reveal"
 
 const ProjectsText = () => {
   return (
-    <TextReveal className="font-[Bricolage_Grotesque] text-lg font-bold text-pretty md:text-3xl">
-      Agora que você conhece um pouco da minha trajetória, é hora de ver na
-      prática como transformo ideias em resultados. Cada projeto é uma nova
-      oportunidade de aprender e entregar soluções criativas.
+    <TextReveal className="mx-auto text-left font-[Bricolage_Grotesque] text-lg font-bold text-pretty md:text-3xl">
+      De conceitos abstratos a interfaces funcionais, essa é a magia do
+      desenvolvimento, cada projeto abaixo conta uma história de problemas
+      resolvidos e aprendizados conquistados.
     </TextReveal>
   )
 }
