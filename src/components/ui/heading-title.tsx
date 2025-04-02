@@ -19,7 +19,7 @@ const HeadingTitle = ({ title, children }: IHeadingTitle) => {
       >
         {title}
       </TextAnimate>
-      <p className="description">{children}</p>
+      <p className="description mx-auto max-w-[48ch]">{children}</p>
     </React.Fragment>
   )
 }
