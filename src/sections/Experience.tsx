@@ -10,25 +10,24 @@ import { experienceSectionData } from "@/constants/experienceConstants"
 
 const Experience = () => {
   return (
-    <section className="container mt-20 grid grid-cols-1 items-center gap-10 md:grid-cols-2">
+    <section className="container mt-20 grid grid-cols-1 items-start gap-10 md:grid-cols-2">
       {/* heading */}
       <div className="text-center md:order-2">
         <HeadingTitle title="Experiência Profissional">
-          Ao longo da minha carreira, tive a chance de trabalhar em diferentes
-          cenários, alguns deles são.
+          Já fui de empacotar produtos e até descarregar caminhões. Hoje,
+          prefiro &apos;debugar&apos; códigos, porém toda essa bagagem me fez um
+          profissional mais adaptável e determinado.
         </HeadingTitle>
       </div>
 
       <article className="mx-auto w-full md:order-1">
-        {/* accordion with job info */}
-        {experienceSectionData.map((experience) => (
-          <Accordion
-            type="single"
-            collapsible
-            key={experience.title}
-            className="w-full border-b border-white/10"
-          >
-            <AccordionItem value="item-1">
+        <Accordion type="single" collapsible className="w-full">
+          {experienceSectionData.map((experience, index) => (
+            <AccordionItem
+              key={experience.title}
+              value={`item-${index}`}
+              className="border-b border-white/10"
+            >
               <AccordionTrigger>
                 <AccordionHeader className="flex w-full cursor-pointer flex-col items-start">
                   <div>
@@ -40,7 +39,7 @@ const Experience = () => {
                     <h6 className="subtitle--caption capitalize">
                       {experience.subtitle}
                     </h6>
-                    <p className="text-muted/70 text-xs font-light capitalize">
+                    <p className="text-muted/60 text-xs font-light capitalize">
                       {experience.year}
                     </p>
                   </div>
@@ -50,8 +49,8 @@ const Experience = () => {
                 <p className="description">{experience.description}</p>
               </AccordionContent>
             </AccordionItem>
-          </Accordion>
-        ))}
+          ))}
+        </Accordion>
       </article>
     </section>
   )
