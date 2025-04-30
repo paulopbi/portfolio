@@ -7,7 +7,7 @@ import { Button } from "../../../components/ui/button"
 import { ArrowLeft, ArrowUpRightIcon } from "lucide-react"
 import { allProjects } from "@/constants/projectConstants"
 import { TextAnimate } from "../../../components/magicui/text-animate"
-import { highlightTags } from "@/lib/utils"
+import { highlightTag } from "@/utils/highlightTag"
 
 const DetailedProjectInfo = ({ data }: { data: typeof allProjects }) => {
   return (
@@ -47,7 +47,7 @@ const DetailedProjectInfo = ({ data }: { data: typeof allProjects }) => {
                     repeatType: "loop",
                     duration: 3,
                   }}
-                  className={highlightTags(tag)}
+                  className={highlightTag(tag)}
                   key={tag}
                 >
                   {tag}

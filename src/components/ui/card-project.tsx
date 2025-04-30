@@ -4,8 +4,7 @@ import Image, { StaticImageData } from "next/image"
 import { motion } from "framer-motion"
 import { Button } from "./button"
 import { ArrowUpRight } from "lucide-react"
-import { highlightTags } from "@/lib/utils"
-
+import { highlightTag } from "@/utils/highlightTag"
 interface ICardProject {
   imageSrc: StaticImageData | string
   title: string
@@ -45,7 +44,7 @@ const CardProject = ({ imageSrc, title, skills, hrefTo }: ICardProject) => {
                 duration: 2,
               }}
               key={slug}
-              className={`${highlightTags(slug)}`}
+              className={`${highlightTag(slug)}`}
             >
               <span>{slug}</span>
             </motion.div>
