@@ -1,4 +1,5 @@
 /* demo */
+import Zerou from "@/assets/demo/zerou.gif"
 import Dogs from "@/assets/demo/dogs.png"
 import LemonPeper from "@/assets/demo/lemon_peper.jpg"
 import MovieMate from "@/assets/demo/movie_mate.jpeg"
@@ -33,9 +34,29 @@ const projectDescription = {
   lemonPeper: `<strong>O Lemon Peper é um projeto de UI Design desenvolvido em colaboração com um amigo, criado para uma pizzaria fictícia</strong>. O objetivo foi desenvolver um website que oferecesse uma experiência visualmente atraente e funcional, permitindo que os usuários explorassem diferentes tipos de pizzas utilizando filtros intuitivos. <br/><br/> 
               Todo <strong>o design foi cuidadosamente elaborado no Figma, com foco em criar uma interface moderna, limpa e alinhada às necessidades dos usuários</strong>. As imagens utilizadas no projeto foram editadas no <strong>Photoshop</strong>, garantindo uma qualidade excepcional e um visual profissional. Cada detalhe foi pensado para destacar o apelo visual das pizzas e proporcionar uma experiência envolvente para o usuário. <br/><br/> 
               O projeto completo foi publicado no <strong>Behance</strong>, onde você pode conferir todos os detalhes do design acessando o link acima. Este trabalho reflete minha habilidade em criar designs funcionais e esteticamente impactantes, sempre priorizando a experiência do usuário e a qualidade visual.`,
+  zerou: `O <strong></strong>Zerou é <strong>uma aplicação web desenvolvida com React</strong> que permite aos usuários organizarem e acompanharem seus jogos de maneira prática e personalizada, podendo fazer anotações dos jogos que está jogando de maneira rápida. <strong>Com funcionalidades de CRUD (Criar, Ler, Atualizar e Deletar)</strong>, animações suaves, editor de texto avançado e autenticação segura, é a ferramenta perfeita para quem quer manter anotar toda a sua jogatina.`,
 }
 
 export const allProjects = [
+  {
+    main: true,
+    image_url: Zerou.src,
+    slug: "zerou",
+    title: "Zerou",
+    year: 2023,
+    tags: [
+      "react js",
+      "css",
+      "typescript",
+      "firebase",
+      "react router",
+      "TipTap",
+      "framer motion",
+    ],
+    description: projectDescription.zerou,
+    repository: "https://github.com/paulopbi/zerou",
+    demo_url: "https://zerou.vercel.app/",
+  },
   {
     main: true,
     image_url: Dogs.src,
