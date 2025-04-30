@@ -13,11 +13,4 @@ export const experienceSectionData = [
       "A empresa é especializada na fabricação de produtos de lazer, como cadeiras de praia, carrinhos de mão e guarda sol entre outros, eu atuava operando as máquinas que produziam esses produtos.",
     year: "Set 2022 – Fev 2024",
   },
-  {
-    title: "Operador de Logística I",
-    subtitle: "Americanas S.A",
-    description:
-      "Trabalhei no setor de picking/separação, utilizavamos o sistema WMS (Warehouse Management System), que é um software que ajuda a gerir e controlar as operações de armazéns e centros de distribuição, permitindo separar corretamente os produtos, enviar a consolidação e depois enviar ao usuário final.",
-    year: "Temporário",
-  },
 ]
