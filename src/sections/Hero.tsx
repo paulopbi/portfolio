@@ -51,7 +51,7 @@ const Hero = () => {
         <div className="mt-4">
           <Button asChild variant="default">
             <a
-              href="https://docs.google.com/document/d/1I8u6CNssCadMcUNyQW4P8sCbYHqC-AUg/edit?usp=sharing&ouid=113949315255905802728&rtpof=true&sd=true"
+              href="https://docs.google.com/document/d/1WPWSy1veT0A_f8DJXWYsBiMZ0oONBIzZ7yAlI3Krzxg/edit?usp=sharing"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center justify-between gap-2"
