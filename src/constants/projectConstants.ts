@@ -7,6 +7,7 @@ import CodeLandia from "@/assets/demo/codelandia.jpg"
 import FlashDash from "@/assets/demo/flashdash.gif"
 import Sass from "@/assets/demo/sass.gif"
 import RickAndMorty from "@/assets/demo/rick_morty.gif"
+import FormHandler from "@/assets/demo/form-handler.gif"
 
 const projectDescription = {
   dogs: `<strong>O Dogs é uma rede social dedicada aos amantes de cachorros, onde os usuários podem compartilhar fotos de seus pets e interagir com outras pessoas que compartilham da mesma paixão.</strong> A aplicação foi desenvolvida com foco em <strong>autenticação segura</strong> e <strong>experiência do usuário</strong>, utilizando tecnologias como <strong>Next.js</strong>, <strong>JWT (JSON Web Tokens)</strong>, <strong>TypeScript</strong> e <strong>CSS puro</strong>.<br/><br/> 
@@ -35,6 +36,10 @@ const projectDescription = {
               Todo <strong>o design foi cuidadosamente elaborado no Figma, com foco em criar uma interface moderna, limpa e alinhada às necessidades dos usuários</strong>. As imagens utilizadas no projeto foram editadas no <strong>Photoshop</strong>, garantindo uma qualidade excepcional e um visual profissional. Cada detalhe foi pensado para destacar o apelo visual das pizzas e proporcionar uma experiência envolvente para o usuário. <br/><br/> 
               O projeto completo foi publicado no <strong>Behance</strong>, onde você pode conferir todos os detalhes do design acessando o link acima. Este trabalho reflete minha habilidade em criar designs funcionais e esteticamente impactantes, sempre priorizando a experiência do usuário e a qualidade visual.`,
   zerou: `O <strong></strong>Zerou é <strong>uma aplicação web desenvolvida com React</strong> que permite aos usuários organizarem e acompanharem seus jogos de maneira prática e personalizada, podendo fazer anotações dos jogos que está jogando de maneira rápida. <strong>Com funcionalidades de CRUD (Criar, Ler, Atualizar e Deletar)</strong>, animações suaves, editor de texto avançado e autenticação segura, é a ferramenta perfeita para quem quer manter anotar toda a sua jogatina.`,
+  formHandler: `<strong>Form Handler</strong> é um projeto fullstack completo criado com o objetivo de aprofundar os conhecimentos no desenvolvimento de formulários web inteligentes e eficientes. A proposta principal do projeto é simular um fluxo real de um sistema de entrada de dados, aplicando <strong>boas práticas de desenvolvimento tanto no frontend quanto no backend</strong>. 
+          Desde a <strong>validação dos dados na camada de interface</strong>, passando pela comunicação com a API, até o armazenamento no banco de dados, todas as etapas foram cuidadosamente construídas para garantir integridade, escalabilidade e uma experiência agradável para o usuário. <br/><br/>  O principal foco deste projeto é oferecer um <strong>formulário dinâmico com validação robusta</strong>, que forneça mensagens claras e úteis ao usuário final, ao mesmo tempo em que integra esses dados de forma segura com uma API backend. <br/><br/>
+          A validação é aplicada tanto no frontend quanto no backend para garantir consistência e prevenir falhas de segurança. A ideia foi simular uma situação real onde o usuário envia dados e espera respostas precisas e amigáveis da aplicação. 
+          Formulário dinâmico com validações em tempo real, opção de exibir ou ocultar o conteúdo dos campos de senha Aplicação de máscaras para CPF, telefone e CEP Busca automática de endereço a partir do CEP usando integração com API externa Feedback de erro e sucesso personalizado, com mensagens intuitivas Armazenamento de dados no banco de forma segura Foco na usabilidade com interface clara e mensagens que orientam o usuário durante a navegação.`,
 }
 
 export const allProjects = [
@@ -100,6 +105,26 @@ export const allProjects = [
     description: projectDescription.flashdash,
     repository: "https://github.com/paulopbi/flashdash",
     demo_url: "https://flashdash-nine.vercel.app/",
+  },
+  {
+    main: true,
+    image_url: FormHandler.src,
+    slug: "form-handler",
+    title: "Form Handler",
+    tags: [
+      "react js",
+      "typescript",
+      "css",
+      "zod",
+      "react hook form",
+      "sqlite",
+      "prisma orm",
+      "express",
+    ],
+    year: 2025,
+    description: projectDescription.formHandler,
+    repository: "https://github.com/paulopbi/form-handler",
+    demo_url: null,
   },
   {
     main: false,
