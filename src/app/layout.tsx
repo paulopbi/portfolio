@@ -2,6 +2,7 @@ import "./globals.css"
 import type { Metadata } from "next"
 import { interSansFont } from "@/utils/fonts"
 import { SeoKeyWords } from "@/constants"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
   keywords: SeoKeyWords,
@@ -55,6 +56,7 @@ export default function RootLayout({
         className={`${interSansFont.className} bg-background relative text-white antialiased`}
       >
         {children}
+        <SpeedInsights />
       </body>
     </html>
   )
