@@ -1,4 +1,3 @@
-/* demo */
 import Zerou from "@/assets/demo/zerou.gif"
 import Dogs from "@/assets/demo/dogs.png"
 import LemonPeper from "@/assets/demo/lemon_peper.jpg"
