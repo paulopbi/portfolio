@@ -46,7 +46,10 @@ const Experience = () => {
                 </AccordionHeader>
               </AccordionTrigger>
               <AccordionContent>
-                <p className="description">{experience.description}</p>
+                <p
+                  className="description"
+                  dangerouslySetInnerHTML={{ __html: experience.description }}
+                ></p>
               </AccordionContent>
             </AccordionItem>
           ))}
