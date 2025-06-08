@@ -45,7 +45,10 @@ const Education = () => {
                 </AccordionHeader>
               </AccordionTrigger>
               <AccordionContent>
-                <p className="description">{education.description}</p>
+                <p
+                  className="description"
+                  dangerouslySetInnerHTML={{ __html: education.description }}
+                ></p>
 
                 {education.linkName && education.href && (
                   <Link
